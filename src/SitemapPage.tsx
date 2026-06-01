@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { cities, keywords } from './seoData';
-import { Container, ChevronRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 
 export default function SitemapPage() {
   return (

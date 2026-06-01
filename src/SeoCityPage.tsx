@@ -7,10 +7,8 @@ import {
   Mail,
   Truck,
   Shield,
-  CheckCircle,
   ChevronRight,
   ArrowRight,
-  Container,
   Clock,
   Star,
 } from 'lucide-react';
@@ -60,19 +58,19 @@ export default function SeoCityPage() {
       </Helmet>
 
       {/* Nav */}
-      <header className="bg-white/95 dark:bg-gray-950/95 backdrop-blur-md border-b border-gray-100 dark:border-gray-800 sticky top-0 z-50">
+      <header className="bg-navy-700 sticky top-0 z-50 shadow-lg shadow-black/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center gap-2.5">
               <img src="/logo_starcontainers.png" alt="STAR Containers" className="h-8 w-auto" />
-              <span className="hidden sm:block font-black text-lg transition-colors duration-300 text-gray-900 dark:text-white">
+              <span className="hidden sm:block font-black text-lg text-white">
                 STAR <span className="text-orange-500">CONTAINERS</span>
               </span>
             </Link>
             <div className="hidden md:flex items-center gap-6 text-sm font-semibold">
-              <Link to="/" className="text-gray-600 dark:text-gray-300 hover:text-orange-500 transition-colors">Domov</Link>
-              <a href="/#kontejnerji" className="text-gray-600 dark:text-gray-300 hover:text-orange-500 transition-colors">Kontejnerji</a>
-              <a href="/#kontakt" className="text-gray-600 dark:text-gray-300 hover:text-orange-500 transition-colors">Kontakt</a>
+              <Link to="/" className="text-white hover:text-orange-400 transition-colors">Domov</Link>
+              <a href="/#kontejnerji" className="text-white hover:text-orange-400 transition-colors">Kontejnerji</a>
+              <a href="/#kontakt" className="text-white hover:text-orange-400 transition-colors">Kontakt</a>
             </div>
             <a href="/#kontakt" className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all">
               Povpraševanje
@@ -255,6 +253,39 @@ export default function SeoCityPage() {
                   </Link>
                 </div>
               </div>
+
+              {/* Facebook backlink */}
+              <a
+                href="https://www.facebook.com/profile.php?id=61590607888405"
+                target="_blank"
+                rel="noopener"
+                className="flex items-center gap-3 bg-[#1877F2] hover:bg-[#166fe5] text-white font-bold px-5 py-4 rounded-2xl transition-all hover:shadow-lg hover:shadow-blue-500/25 group"
+              >
+                <svg className="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                <div>
+                  <div className="text-xs text-blue-200 font-medium">Facebook</div>
+                  <div className="text-sm">Aktualna zaloga</div>
+                </div>
+                <svg className="w-4 h-4 ml-auto group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+              </a>
+
+              {/* Skladiscko backlink */}
+              <div className="bg-navy-700 rounded-2xl p-6">
+                <div className="text-xs font-semibold text-orange-400 uppercase tracking-widest mb-2">Partnerski portal</div>
+                <h3 className="font-bold text-white mb-2">Iščete skladiščne rešitve?</h3>
+                <p className="text-navy-200 text-sm mb-4 leading-relaxed">
+                  Obiščite <strong className="text-white">skladiscko.si</strong> – portal za skladiščne prostore, kontejnerje in logistične rešitve v Sloveniji.
+                </p>
+                <a
+                  href="https://skladiscko.si/"
+                  target="_blank"
+                  rel="noopener"
+                  className="flex items-center justify-between bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-xl text-sm transition-colors group"
+                >
+                  Obiščite skladiscko.si
+                  <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -318,7 +349,7 @@ export default function SeoCityPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-950 dark:bg-navy-950 text-gray-400 py-8 border-t border-navy-800/50 dark:border-navy-800">
+      <footer className="bg-navy-900 text-gray-400 py-8 border-t border-navy-700/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-gray-600">
           <div className="mb-3">
             <a href="https://skladiscko.si/" target="_blank" rel="noopener noreferrer" className="text-orange-400 hover:text-orange-300 transition-colors font-semibold">

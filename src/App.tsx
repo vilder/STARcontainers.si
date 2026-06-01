@@ -52,10 +52,10 @@ const containers = [
     id: 1,
     name: '10ft Standard',
     size: '10 čevljev',
-    dimensions: '2.99m × 2.44m × 2.59m',
+    dimensions: '3.05m × 2.44m × 2.59m',
     capacity: '14 m³',
     price: '1.790',
-    image: 'https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/photos/10ft.jpg',
     features: ['Protipožarna zaščita', 'Vodoodporen', 'Protivlomna vrata', 'Certificiran'],
     badge: null,
   },
@@ -63,10 +63,10 @@ const containers = [
     id: 2,
     name: '20ft Standard',
     size: '20 čevljev',
-    dimensions: '5.90m × 2.35m × 2.39m',
+    dimensions: '6.06m × 2.44m × 2.59m',
     capacity: '33 m³',
     price: '1.990',
-    image: 'https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://skladiscko.si/assets/20antracit-C8dMsk9V.jpg',
     features: ['Protipožarna zaščita', 'Vodoodporen', 'Protivlomna vrata', 'Certificiran'],
     badge: 'Najbolj priljubljen',
   },
@@ -74,10 +74,10 @@ const containers = [
     id: 3,
     name: '40ft Standard',
     size: '40 čevljev',
-    dimensions: '12.03m × 2.35m × 2.39m',
+    dimensions: '12.19m × 2.44m × 2.59m',
     capacity: '67 m³',
     price: '2.700',
-    image: 'https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://skladiscko.si/assets/40antracit-UFC3hngh.jpg',
     features: ['Protipožarna zaščita', 'Vodoodporen', 'Protivlomna vrata', 'Certificiran'],
     badge: null,
   },
@@ -85,10 +85,10 @@ const containers = [
     id: 4,
     name: '20ft High Cube',
     size: '20 čevljev HC',
-    dimensions: '5.90m × 2.35m × 2.70m',
+    dimensions: '6.06m × 2.44m × 2.90m',
     capacity: '37 m³',
     price: '2.490',
-    image: 'https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://skladiscko.si/assets/hc20-CasG8jl-.webp',
     features: ['Večja višina', 'Vodoodporen', 'Protivlomna vrata', 'Certificiran'],
     badge: 'Nova zaloga',
   },
@@ -96,10 +96,10 @@ const containers = [
     id: 5,
     name: '40ft High Cube',
     size: '40 čevljev HC',
-    dimensions: '12.03m × 2.35m × 2.70m',
+    dimensions: '12.19m × 2.44m × 2.90m',
     capacity: '76 m³',
     price: '2.790',
-    image: 'https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://solidboxcontainer.com/cdn/shop/files/WechatIMG304_46fd1337-9833-46ec-b8b8-ac7c9291e58e.jpg?v=1687164185&width=1946',
     features: ['Največja kapaciteta', 'Vodoodporen', 'Protivlomna vrata', 'Certificiran'],
     badge: null,
   },
@@ -107,10 +107,10 @@ const containers = [
     id: 6,
     name: 'Refrigerated 20ft',
     size: '20 čevljev REF',
-    dimensions: '5.44m × 2.29m × 2.27m',
+    dimensions: '6.06m × 2.44m × 2.59m',
     capacity: '28 m³',
     price: '6.990',
-    image: 'https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/photos/reefer-3.jpg',
     features: ['Hlajenje -25°C', 'Vodoodporen', 'Protivlomna vrata', 'Certificiran'],
     badge: 'Premium',
   },
@@ -118,10 +118,10 @@ const containers = [
     id: 7,
     name: 'Refrigerated 40ft HC',
     size: '40 čevljev REF HC',
-    dimensions: '11.58m × 2.29m × 2.55m',
+    dimensions: '12.19m × 2.44m × 2.90m',
     capacity: '67 m³',
     price: '9.900',
-    image: 'https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/photos/reefer-2.jpg',
     features: ['Hlajenje -25°C', 'High Cube višina', 'Protivlomna vrata', 'Certificiran'],
     badge: 'Premium Plus',
   },
@@ -129,10 +129,10 @@ const containers = [
     id: 8,
     name: 'Rabljeni 20ft',
     size: '20 čevljev (rabljeni)',
-    dimensions: '5.90m × 2.35m × 2.39m',
+    dimensions: '6.06m × 2.44m × 2.59m',
     capacity: '33 m³',
     price: '1.490',
-    image: 'https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/photos/rabljen-20ft-main.jpg',
     features: ['Funkcionalno brezhibni', 'Vodoodporen', 'Protivlomna vrata', 'Certificiran'],
     badge: 'Rabljeni',
   },
@@ -140,10 +140,10 @@ const containers = [
     id: 9,
     name: 'Rabljeni 40ft HC',
     size: '40 čevljev HC (rabljeni)',
-    dimensions: '12.03m × 2.35m × 2.70m',
+    dimensions: '12.19m × 2.44m × 2.90m',
     capacity: '76 m³',
     price: '2.190',
-    image: 'https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/photos/rabljen-40ft-main.jpg',
     features: ['Funkcionalnost jamčena', 'Vodoodporen', 'Protivlomna vrata', 'Certificiran'],
     badge: 'Rabljeni',
   },
@@ -214,8 +214,9 @@ export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeFilter, setActiveFilter] = useState('Vsi');
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
-  const [formSent, setFormSent] = useState(false);
+  const [formData, setFormData] = useState({ name: '', email: '', phone: '', service: '', message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const heroSection = useInView(0.1);
   const statsSection = useInView(0.2);
@@ -251,11 +252,27 @@ export default function App() {
     return true;
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setFormSent(true);
-    setTimeout(() => setFormSent(false), 4000);
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+    try {
+      const response = await fetch('https://skladiscko.si/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const navLinks = [
@@ -267,7 +284,7 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-white overflow-x-hidden">
+    <div className="min-h-screen bg-white dark:bg-navy-950 text-gray-900 dark:text-white overflow-x-hidden">
       <Helmet>
         <title>STAR Containers – Ladijski kontejnerji za prodajo po Sloveniji</title>
         <meta name="description" content="Vodilni prodajalec ladijskih kontejnerjev v Sloveniji. 10ft, 20ft, 40ft, High Cube, hladilni kontejnerji. Dostava 48h. Brezplačno povpraševanje." />
@@ -278,15 +295,15 @@ export default function App() {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
-            ? 'bg-white/95 dark:bg-navy-900/95 backdrop-blur-md shadow-lg shadow-black/5 dark:shadow-black/30'
-            : 'bg-transparent'
+            ? 'bg-white/98 dark:bg-navy-800/98 backdrop-blur-md shadow-lg shadow-black/10'
+            : 'bg-navy-800/60 backdrop-blur-sm'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-18 py-4">
             <a href="#" className="flex items-center gap-2.5 group">
-              <img src="/logo_starcontainers.png" alt="STAR Containers" className="h-12 w-auto" />
-              <span className="hidden sm:block font-black text-xl tracking-tight transition-colors duration-300 text-gray-900 dark:text-white">
+              <img src="/logo_starcontainers.png" alt="STAR Containers" className="h-16 w-auto" />
+              <span className={`hidden sm:block font-black text-xl tracking-tight transition-colors duration-300 ${scrolled ? 'text-gray-900 dark:text-white' : 'text-white'}`}>
                 STAR <span className="text-orange-500">CONTAINERS</span>
               </span>
             </a>
@@ -296,7 +313,7 @@ export default function App() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400 transition-colors relative group"
+                  className={`text-sm font-semibold hover:text-orange-500 transition-colors relative group ${scrolled ? 'text-gray-700 dark:text-white/90' : 'text-white/90'}`}
                 >
                   {link.label}
                   <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-orange-500 group-hover:w-full transition-all duration-300" />
@@ -307,7 +324,7 @@ export default function App() {
             <div className="flex items-center gap-3">
               <button
                 onClick={() => setDark(!dark)}
-                className="w-9 h-9 rounded-full flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-orange-50 dark:hover:bg-gray-800 hover:text-orange-500 dark:hover:text-orange-400 transition-all"
+                className={`w-9 h-9 rounded-full flex items-center justify-center transition-all hover:text-orange-500 ${scrolled ? 'text-gray-600 dark:text-white/80 hover:bg-gray-100 dark:hover:bg-white/10' : 'text-white/80 hover:bg-white/10'}`}
                 aria-label="Toggle dark mode"
               >
                 {dark ? <Sun className="w-4.5 h-4.5" /> : <Moon className="w-4.5 h-4.5" />}
@@ -322,7 +339,7 @@ export default function App() {
               </a>
 
               <button
-                className="lg:hidden w-9 h-9 flex items-center justify-center text-gray-700 dark:text-gray-300"
+                className={`lg:hidden w-9 h-9 flex items-center justify-center transition-colors ${scrolled ? 'text-gray-700 dark:text-white' : 'text-white'}`}
                 onClick={() => setMenuOpen(!menuOpen)}
               >
                 {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -337,13 +354,13 @@ export default function App() {
             menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
-          <div className="bg-white dark:bg-gray-950 border-t border-gray-100 dark:border-gray-800 px-4 py-4 space-y-1">
+          <div className="bg-navy-700 border-t border-navy-600 px-4 py-4 space-y-1">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="block py-3 px-4 text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-orange-500 hover:bg-orange-50 dark:hover:bg-gray-900 rounded-lg transition-all"
+                className="block py-3 px-4 text-sm font-semibold text-white/80 hover:text-orange-400 hover:bg-white/10 rounded-lg transition-all"
               >
                 {link.label}
               </a>
@@ -360,7 +377,7 @@ export default function App() {
       </header>
 
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-navy-900 via-navy-800 to-black">
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-navy-800 via-navy-700 to-navy-900">
         {/* Background image with overlay */}
         <div className="absolute inset-0">
           <img
@@ -368,7 +385,7 @@ export default function App() {
             alt="Containers"
             className="w-full h-full object-cover opacity-15"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-900/95 via-navy-800/80 to-navy-900/50" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-800/95 via-navy-700/80 to-navy-800/50" />
           <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-transparent to-transparent" />
         </div>
 
@@ -461,7 +478,7 @@ export default function App() {
       </section>
 
       {/* ABOUT */}
-      <section id="o-nas" className="py-24 bg-white dark:bg-navy-900/30 border-b border-gray-100 dark:border-navy-800/30">
+      <section id="o-nas" className="py-24 bg-white dark:bg-navy-800/30 border-b border-gray-100 dark:border-navy-700/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div ref={featuresSection.ref}>
@@ -542,7 +559,7 @@ export default function App() {
       </section>
 
       {/* STATS */}
-      <section className="py-20 bg-gray-900 dark:bg-black relative overflow-hidden">
+      <section className="py-20 bg-navy-800 dark:bg-navy-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-1/4 w-64 h-64 bg-orange-500 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-1/4 w-96 h-64 bg-orange-600 rounded-full blur-3xl" />
@@ -567,6 +584,177 @@ export default function App() {
                 <div className="text-sm text-gray-400 font-medium mt-1.5">{stat.label}</div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PRODUCTS */}
+      <section id="kontejnerji" className="py-24 bg-white dark:bg-navy-800/20 border-b border-gray-100 dark:border-navy-700/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="inline-block text-orange-500 font-semibold text-sm tracking-widest uppercase mb-4">
+              Naša ponudba
+            </span>
+            <h2 className="text-4xl lg:text-5xl font-black leading-tight mb-4">
+              Izberite <span className="text-orange-500">pravi kontejner</span>
+            </h2>
+            <p className="text-gray-500 dark:text-gray-400">
+              Vsi kontejnerji so pregledani, certificirani in takoj dostopni.
+            </p>
+            <a
+              href="https://www.facebook.com/profile.php?id=61590607888405"
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center gap-2.5 mt-5 bg-[#1877F2] hover:bg-[#166fe5] text-white font-bold px-6 py-3 rounded-full transition-all hover:shadow-lg hover:shadow-blue-500/25 hover:-translate-y-0.5"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Aktualna zaloga na Facebooku
+            </a>
+          </div>
+
+          {/* Filters */}
+          <div className="flex flex-wrap justify-center gap-2 mb-10">
+            {filters.map((f) => (
+              <button
+                key={f}
+                onClick={() => setActiveFilter(f)}
+                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
+                  activeFilter === f
+                    ? 'bg-orange-500 text-white shadow-lg shadow-orange-500/25'
+                    : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-orange-300 hover:text-orange-500'
+                }`}
+              >
+                {f}
+              </button>
+            ))}
+          </div>
+
+          <div ref={productsSection.ref} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+            {filteredContainers.map((container, i) => (
+              <div
+                key={container.id}
+                className={`group bg-white dark:bg-navy-700/40 dark:backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-200 dark:border-navy-600/50 hover:border-orange-400 dark:hover:border-orange-500 hover:shadow-xl hover:shadow-orange-500/15 transition-all duration-300 hover:-translate-y-2 ${
+                  productsSection.inView ? 'animate-fade-in-up' : 'opacity-0'
+                }`}
+                style={{ animationDelay: `${i * 80}ms` }}
+              >
+                <div className="relative overflow-hidden aspect-[16/9]">
+                  <img
+                    src={container.image}
+                    alt={container.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                  {container.badge && (
+                    <span className="absolute top-3 left-3 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                      {container.badge}
+                    </span>
+                  )}
+                  <div className="absolute bottom-3 left-3 right-3">
+                    <div className="text-white font-black text-xl">{container.name}</div>
+                    <div className="text-gray-300 text-xs mt-0.5">{container.dimensions}</div>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <div>
+                      <div className="text-xs text-gray-500 dark:text-gray-400 font-medium">Prostornina</div>
+                      <div className="text-lg font-bold">{container.capacity}</div>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-xs text-gray-500 dark:text-gray-400 font-medium">Cena od (brez DDV)</div>
+                      <div className="text-2xl font-black text-orange-500">€{container.price}</div>
+                    </div>
+                  </div>
+                  <div className="space-y-1.5 mb-5">
+                    {container.features.map((f) => (
+                      <div key={f} className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
+                        <CheckCircle className="w-3.5 h-3.5 text-orange-500 flex-shrink-0" />
+                        {f}
+                      </div>
+                    ))}
+                  </div>
+                  <a
+                    href="#kontakt"
+                    className="group/btn w-full flex items-center justify-center gap-2 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-orange-500 dark:hover:bg-orange-500 dark:hover:text-white font-bold py-3 rounded-xl transition-all duration-300"
+                  >
+                    Povpraševanje
+                    <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* RAL COLOR PALETTE */}
+      <section className="py-20 bg-gray-50 dark:bg-navy-900/40 border-b border-gray-100 dark:border-navy-700/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="inline-block text-orange-500 font-semibold text-sm tracking-widest uppercase mb-4">
+              Prilagoditve
+            </span>
+            <h2 className="text-4xl lg:text-5xl font-black leading-tight mb-4">
+              Izberite svojo <span className="text-orange-500">barvo RAL</span>
+            </h2>
+            <p className="text-gray-500 dark:text-gray-400">
+              Kontejnerje lakiramo po vašem izboru. Spodaj so najpogostejše barve RAL – na voljo je celoten RAL vzorčnik.
+            </p>
+          </div>
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9 gap-3">
+            {[
+              { ral: 'RAL 9010', name: 'Bela', hex: '#F4F4F4', light: true },
+              { ral: 'RAL 9016', name: 'Prometna bela', hex: '#F6F6F6', light: true },
+              { ral: 'RAL 9002', name: 'Sivo bela', hex: '#E7E0D4', light: true },
+              { ral: 'RAL 7035', name: 'Svetlo siva', hex: '#D7D7D7', light: true },
+              { ral: 'RAL 7042', name: 'Prometna siva', hex: '#8F9695', light: false },
+              { ral: 'RAL 7016', name: 'Antracit', hex: '#293133', light: false },
+              { ral: 'RAL 9005', name: 'Črna', hex: '#0A0A0A', light: false },
+              { ral: 'RAL 1015', name: 'Svetla slonovina', hex: '#E6D690', light: true },
+              { ral: 'RAL 1003', name: 'Signalno rumena', hex: '#F9A800', light: true },
+              { ral: 'RAL 1007', name: 'Narcisno rumena', hex: '#E5AC00', light: true },
+              { ral: 'RAL 2000', name: 'Rumeno oranžna', hex: '#ED760E', light: false },
+              { ral: 'RAL 2004', name: 'Čista oranžna', hex: '#F44611', light: false },
+              { ral: 'RAL 3000', name: 'Ognjeno rdeča', hex: '#AF2B1E', light: false },
+              { ral: 'RAL 3002', name: 'Karmin rdeča', hex: '#A52019', light: false },
+              { ral: 'RAL 3020', name: 'Prometna rdeča', hex: '#CC0500', light: false },
+              { ral: 'RAL 3031', name: 'Orient rdeča', hex: '#763C28', light: false },
+              { ral: 'RAL 4003', name: 'Reseda vijolična', hex: '#8D1D82', light: false },
+              { ral: 'RAL 5002', name: 'Ultramarin modra', hex: '#20214F', light: false },
+              { ral: 'RAL 5010', name: 'Encijan modra', hex: '#0E4472', light: false },
+              { ral: 'RAL 5013', name: 'Kobalt modra', hex: '#1D1E33', light: false },
+              { ral: 'RAL 5015', name: 'Nebeško modra', hex: '#2271B3', light: false },
+              { ral: 'RAL 5024', name: 'Pastelno modra', hex: '#5D9B9B', light: false },
+              { ral: 'RAL 6005', name: 'Mah zelena', hex: '#2F4538', light: false },
+              { ral: 'RAL 6011', name: 'Reseda zelena', hex: '#587246', light: false },
+              { ral: 'RAL 6018', name: 'Rumeno zelena', hex: '#57A639', light: false },
+              { ral: 'RAL 6029', name: 'Mint zelena', hex: '#1E5945', light: false },
+              { ral: 'RAL 8001', name: 'Ohrovt rjava', hex: '#9E551B', light: false },
+            ].map((color) => (
+              <div key={color.ral} className="group flex flex-col items-center">
+                <div
+                  className="w-full aspect-square rounded-xl shadow-md border border-black/10 mb-2 group-hover:scale-105 group-hover:shadow-lg transition-all duration-200"
+                  style={{ backgroundColor: color.hex }}
+                />
+                <div className="text-center">
+                  <div className="text-xs font-bold text-gray-800 dark:text-gray-200">{color.ral}</div>
+                  <div className="text-xs text-gray-500 dark:text-gray-400 leading-tight mt-0.5">{color.name}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 text-center">
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
+              Ne vidite želene barve? Na voljo je celoten RAL Classic vzorčnik z več kot 200 barvami.
+            </p>
+            <a
+              href="#kontakt"
+              className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold px-7 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-orange-500/25 hover:-translate-y-0.5"
+            >
+              Povprašajte o barvah
+              <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
         </div>
       </section>
@@ -603,7 +791,7 @@ export default function App() {
       </section>
 
       {/* PRODUCTION & LOCATIONS */}
-      <section className="py-20 overflow-hidden bg-gradient-to-br from-navy-900/10 via-navy-800/5 to-transparent dark:from-navy-900/40 dark:via-navy-800/20 dark:to-transparent border-b border-gray-100 dark:border-navy-800/30">
+      <section className="py-20 overflow-hidden bg-gradient-to-br from-navy-50 via-white to-navy-50 dark:from-navy-800/40 dark:via-navy-800/20 dark:to-transparent border-b border-gray-100 dark:border-navy-700/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -657,105 +845,14 @@ export default function App() {
             </div>
             <div>
               <img
-                src="https://images.pexels.com/photos/6347903/pexels-photo-6347903.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="https://www.starcontainers.si/images/7_How_Do_You_Make_Shipping_Containers.png"
                 alt="Proizvodnja kontejnerjev"
-                className="rounded-2xl shadow-2xl w-full h-auto"
+                className="rounded-2xl shadow-2xl w-full h-auto lg:scale-125 lg:origin-left"
               />
               <p className="text-xs text-gray-500 dark:text-gray-400 mt-3 text-center">
                 Proizvodnja kontejnerjev iz Hongkonga
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PRODUCTS */}
-      <section id="kontejnerji" className="py-24 bg-white dark:bg-navy-900/20 border-b border-gray-100 dark:border-navy-800/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="inline-block text-orange-500 font-semibold text-sm tracking-widest uppercase mb-4">
-              Naša ponudba
-            </span>
-            <h2 className="text-4xl lg:text-5xl font-black leading-tight mb-4">
-              Izberite <span className="text-orange-500">pravi kontejner</span>
-            </h2>
-            <p className="text-gray-500 dark:text-gray-400">
-              Vsi kontejnerji so pregledani, certificirani in takoj dostopni.
-            </p>
-          </div>
-
-          {/* Filters */}
-          <div className="flex flex-wrap justify-center gap-2 mb-10">
-            {filters.map((f) => (
-              <button
-                key={f}
-                onClick={() => setActiveFilter(f)}
-                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
-                  activeFilter === f
-                    ? 'bg-orange-500 text-white shadow-lg shadow-orange-500/25'
-                    : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-orange-300 hover:text-orange-500'
-                }`}
-              >
-                {f}
-              </button>
-            ))}
-          </div>
-
-          <div ref={productsSection.ref} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
-            {filteredContainers.map((container, i) => (
-              <div
-                key={container.id}
-                className={`group bg-white dark:bg-navy-800/40 dark:backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-200 dark:border-navy-700/50 hover:border-orange-400 dark:hover:border-orange-500 hover:shadow-xl hover:shadow-orange-500/15 transition-all duration-300 hover:-translate-y-2 ${
-                  productsSection.inView ? 'animate-fade-in-up' : 'opacity-0'
-                }`}
-                style={{ animationDelay: `${i * 80}ms` }}
-              >
-                <div className="relative overflow-hidden aspect-[16/9]">
-                  <img
-                    src={container.image}
-                    alt={container.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                  {container.badge && (
-                    <span className="absolute top-3 left-3 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
-                      {container.badge}
-                    </span>
-                  )}
-                  <div className="absolute bottom-3 left-3 right-3">
-                    <div className="text-white font-black text-xl">{container.name}</div>
-                    <div className="text-gray-300 text-xs mt-0.5">{container.dimensions}</div>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <div>
-                      <div className="text-xs text-gray-500 dark:text-gray-400 font-medium">Prostornina</div>
-                      <div className="text-lg font-bold">{container.capacity}</div>
-                    </div>
-                    <div className="text-right">
-                      <div className="text-xs text-gray-500 dark:text-gray-400 font-medium">Cena od (brez DDV)</div>
-                      <div className="text-2xl font-black text-orange-500">€{container.price}</div>
-                    </div>
-                  </div>
-                  <div className="space-y-1.5 mb-5">
-                    {container.features.map((f) => (
-                      <div key={f} className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
-                        <CheckCircle className="w-3.5 h-3.5 text-orange-500 flex-shrink-0" />
-                        {f}
-                      </div>
-                    ))}
-                  </div>
-                  <a
-                    href="#kontakt"
-                    className="group/btn w-full flex items-center justify-center gap-2 bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-orange-500 dark:hover:bg-orange-500 dark:hover:text-white font-bold py-3 rounded-xl transition-all duration-300"
-                  >
-                    Povpraševanje
-                    <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                  </a>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -837,7 +934,7 @@ export default function App() {
       </section>
 
       {/* CONTACT */}
-      <section id="kontakt" className="py-24 bg-gray-50 dark:bg-gray-900/50">
+      <section id="kontakt" className="py-24 bg-navy-50 dark:bg-navy-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div ref={contactSection.ref}>
@@ -891,7 +988,7 @@ export default function App() {
               </div>
 
               <div
-                className={`mt-8 p-6 bg-gray-900 dark:bg-black rounded-2xl ${
+                className={`mt-8 p-6 bg-navy-800 dark:bg-navy-900 rounded-2xl ${
                   contactSection.inView ? 'animate-fade-in-up animation-delay-800' : 'opacity-0'
                 }`}
               >
@@ -916,14 +1013,14 @@ export default function App() {
             {/* Form */}
             <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 p-8 shadow-xl shadow-gray-100/50 dark:shadow-none">
               <h3 className="text-xl font-bold mb-6">Pošljite povpraševanje</h3>
-              {formSent ? (
+              {submitStatus === 'success' ? (
                 <div className="flex flex-col items-center justify-center py-12 text-center">
                   <div className="w-16 h-16 bg-green-50 dark:bg-green-950/40 rounded-full flex items-center justify-center mb-4">
                     <CheckCircle className="w-8 h-8 text-green-500" />
                   </div>
-                  <h4 className="text-lg font-bold mb-2">Sporocilo poslano!</h4>
+                  <h4 className="text-lg font-bold mb-2">Sporočilo poslano!</h4>
                   <p className="text-gray-500 dark:text-gray-400 text-sm">
-                    Odgovorili vam bomo v najkrajsem moznem casu.
+                    Odgovorili vam bomo v najkrajšem možnem času.
                   </p>
                 </div>
               ) : (
@@ -935,6 +1032,7 @@ export default function App() {
                       </label>
                       <input
                         type="text"
+                        name="name"
                         required
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -948,6 +1046,7 @@ export default function App() {
                       </label>
                       <input
                         type="tel"
+                        name="phone"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         placeholder="+386 41 000 000"
@@ -961,6 +1060,7 @@ export default function App() {
                     </label>
                     <input
                       type="email"
+                      name="email"
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -970,24 +1070,53 @@ export default function App() {
                   </div>
                   <div>
                     <label className="block text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1.5">
-                      Sporocilo *
+                      Vrsta kontejnerja
+                    </label>
+                    <select
+                      name="service"
+                      value={formData.service}
+                      onChange={(e) => setFormData({ ...formData, service: e.target.value })}
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-sm transition-all"
+                    >
+                      <option value="">-- Izberite tip --</option>
+                      <option>10ft Standard</option>
+                      <option>20ft Standard</option>
+                      <option>40ft Standard</option>
+                      <option>20ft High Cube</option>
+                      <option>40ft High Cube</option>
+                      <option>Refrigerated 20ft</option>
+                      <option>Refrigerated 40ft HC</option>
+                      <option>Rabljeni kontejner</option>
+                      <option>Drugo / Svetovanje</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1.5">
+                      Sporočilo *
                     </label>
                     <textarea
+                      name="message"
                       required
-                      rows={5}
+                      rows={4}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       placeholder="Opišite kateri kontejner vas zanima, dimenzije, namen uporabe..."
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-sm transition-all resize-none"
                     />
                   </div>
+                  {submitStatus === 'error' && (
+                    <p className="text-sm text-red-500 text-center">
+                      Napaka pri pošiljanju. Prosimo pokličite nas na +386 30 555 001.
+                    </p>
+                  )}
                   <button
                     type="submit"
-                    className="group w-full flex items-center justify-center gap-2.5 bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/25 hover:-translate-y-0.5"
+                    disabled={isSubmitting}
+                    className="group w-full flex items-center justify-center gap-2.5 bg-orange-500 hover:bg-orange-600 disabled:bg-orange-400 disabled:cursor-not-allowed text-white font-bold py-4 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/25 hover:-translate-y-0.5"
                   >
                     <Send className="w-4 h-4" />
-                    Pošlji povpraševanje
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    {isSubmitting ? 'Pošiljam...' : 'Pošlji povpraševanje'}
+                    {!isSubmitting && <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />}
                   </button>
                   <p className="text-xs text-center text-gray-400 dark:text-gray-500">
                     Vaši podatki so varni. Odgovorili vam bomo v 2 urah.
@@ -1000,7 +1129,7 @@ export default function App() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-gray-950 dark:bg-navy-950 text-gray-400 py-12 border-t border-navy-800/50 dark:border-navy-800">
+      <footer className="bg-navy-900 text-gray-400 py-12 border-t border-navy-700/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
             <div>
