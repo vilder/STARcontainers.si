@@ -234,6 +234,7 @@ export default function App() {
 
   const heroSection = useInView(0.1);
   const statsSection = useInView(0.2);
+  const aboutSection = useInView(0.1);
   const featuresSection = useInView(0.1);
   const productsSection = useInView(0.1);
   const testimonialsSection = useInView(0.1);
@@ -495,17 +496,17 @@ export default function App() {
       <section id="o-nas" className="py-24 bg-white dark:bg-navy-800/30 border-b border-gray-100 dark:border-navy-700/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div ref={featuresSection.ref}>
+            <div ref={aboutSection.ref}>
               <span
                 className={`inline-block text-orange-500 font-semibold text-sm tracking-widest uppercase mb-4 ${
-                  featuresSection.inView ? 'animate-fade-in-up' : 'opacity-0'
+                  aboutSection.inView ? 'animate-fade-in-up' : 'opacity-0'
                 }`}
               >
                 O podjetju
               </span>
               <h2
                 className={`text-4xl lg:text-5xl font-black leading-tight mb-6 ${
-                  featuresSection.inView ? 'animate-fade-in-up animation-delay-200' : 'opacity-0'
+                  aboutSection.inView ? 'animate-fade-in-up animation-delay-200' : 'opacity-0'
                 }`}
               >
                 Vaš zaupanja vreden{' '}
@@ -513,7 +514,7 @@ export default function App() {
               </h2>
               <p
                 className={`text-gray-600 dark:text-gray-400 leading-relaxed mb-6 ${
-                  featuresSection.inView ? 'animate-fade-in-up animation-delay-400' : 'opacity-0'
+                  aboutSection.inView ? 'animate-fade-in-up animation-delay-400' : 'opacity-0'
                 }`}
               >
                 Star Containers je slovensko podjetje z več kot 12-letnimi izkušnjami na področju
@@ -522,7 +523,7 @@ export default function App() {
               </p>
               <p
                 className={`text-gray-600 dark:text-gray-400 leading-relaxed mb-8 ${
-                  featuresSection.inView ? 'animate-fade-in-up animation-delay-400' : 'opacity-0'
+                  aboutSection.inView ? 'animate-fade-in-up animation-delay-400' : 'opacity-0'
                 }`}
               >
                 Specializiramo se za prodajo standardnih, High Cube in hladilnih kontejnerjev, pridobljenih direktno iz Hongkonga brez posrednikov,
@@ -531,7 +532,7 @@ export default function App() {
               </p>
               <div
                 className={`flex flex-wrap gap-3 ${
-                  featuresSection.inView ? 'animate-fade-in-up animation-delay-600' : 'opacity-0'
+                  aboutSection.inView ? 'animate-fade-in-up animation-delay-600' : 'opacity-0'
                 }`}
               >
                 {['ISO certificirani', 'Dostava 48h', 'Prilagoditve po meri', 'Garancija kakovosti'].map((tag) => (
