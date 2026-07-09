@@ -1,0 +1,25 @@
+- `[x]` Install dependencies (astro, @astrojs/react, @astrojs/tailwind) and update scripts in package.json
+- `[x]` Create `astro.config.mjs`
+- `[x]` Create base `Layout.astro`
+- `[x]` Extract shared React components:
+  - `[x]` `Header.tsx` (mobile menu, theme toggle)
+  - `[x]` `Footer.tsx` (standard footer)
+  - `[x]` `ContainerFilter.tsx` (dynamic filtering)
+  - `[x]` `ContactForm.tsx` (contact form submission via Supabase)
+  - `[x]` `FaqItem.tsx` (FAQ component)
+- `[x]` Create pages:
+  - `[x]` `index.astro` (Homepage)
+  - `[x]` `sitemap.astro` (Sitemap Page)
+  - `[x]` `[slug].astro` (Keyword Pages)
+  - `[x]` `kontejner/[slug].astro` (City Pages)
+- `[x]` Delete obsolete files:
+  - `[x]` `vite.config.ts`
+  - `[x]` `index.html`
+  - `[x]` `src/main.tsx`
+  - `[x]` `src/App.tsx`
+  - `[x]` `src/SeoCityPage.tsx`
+  - `[x]` `src/SeoKeywordPage.tsx`
+  - `[x]` `src/SitemapPage.tsx`
+  - `[x]` `src/ScrollToTop.tsx`
+- `[x]` Update `tsconfig.json` configurations
+- `[x]` Verify with `npm run build` and test functionality

@@ -1,0 +1,92 @@
+---
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import '../index.css';
+
+interface Props {
+  title: string;
+  description: string;
+  keywords?: string;
+  canonical?: string;
+  schema?: string;
+}
+
+const { title, description, keywords, canonical, schema } = Astro.props;
+---
+
+<!doctype html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {keywords && <meta name="keywords" content={keywords} />}
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="sl_SI" />
+    <meta property="og:site_name" content="STAR Containers" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    
+    {canonical && <link rel="canonical" href={canonical} />}
+
+    <!-- Inline Script to initialize Dark Mode -->
+    <script is:inline>
+      const theme = (() => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+          return localStorage.getItem('theme');
+        }
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          return 'dark';
+        }
+        return 'light';
+      })();
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+    
+    {schema && <script type="application/ld+json" set:html={schema}></script>}
+  </head>
+  <body class="min-h-screen bg-white dark:bg-navy-950 text-gray-900 dark:text-white overflow-x-hidden">
+    <Header client:load />
+    <slot />
+    <Footer />
+    
+    <script>
+      // Global scroll animations setup
+      const setupAnimations = () => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const target = entry.target as HTMLElement;
+              // Trigger animations by adding the animation class
+              const animClass = target.dataset.anim || 'animate-fade-in-up';
+              target.classList.add(animClass);
+              target.classList.remove('opacity-0');
+              observer.unobserve(target);
+            }
+          });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.scroll-animate').forEach(el => {
+          observer.observe(el);
+        });
+      };
+      
+      // Run on initial load
+      setupAnimations();
+      
+      // In case of dynamic content / view transitions
+      document.addEventListener('astro:after-swap', setupAnimations);
+    </script>
+  </body>
+</html>

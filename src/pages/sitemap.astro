@@ -1,0 +1,74 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { cities, keywords } from '../seoData';
+import { ChevronRight } from 'lucide-react';
+---
+
+<Layout
+  title="Zemljevid strani – Sitemap | STAR Containers"
+  description="Zemljevid strani STAR Containers. Vse strani o ladijskih kontejnerjih, cenah, mestih in tipih."
+>
+  <section class="py-32">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl lg:text-5xl font-black mb-12">Zemljevid strani</h1>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+        {/* Main pages */}
+        <div>
+          <h2 class="text-xl font-bold mb-5 text-orange-500 border-b border-gray-100 dark:border-navy-800 pb-2">Glavne strani</h2>
+          <div class="space-y-3">
+            <a href="/" class="flex items-center gap-2 text-sm hover:text-orange-500 transition-colors">
+              <ChevronRight class="w-3.5 h-3.5 text-orange-500" /> Domov
+            </a>
+            <a href="/#kontejnerji" class="flex items-center gap-2 text-sm hover:text-orange-500 transition-colors">
+              <ChevronRight class="w-3.5 h-3.5 text-orange-500" /> Kontejnerji
+            </a>
+            <a href="/#prednosti" class="flex items-center gap-2 text-sm hover:text-orange-500 transition-colors">
+              <ChevronRight class="w-3.5 h-3.5 text-orange-500" /> Prednosti
+            </a>
+            <a href="/#mnenja" class="flex items-center gap-2 text-sm hover:text-orange-500 transition-colors">
+              <ChevronRight class="w-3.5 h-3.5 text-orange-500" /> Mnenja strank
+            </a>
+            <a href="/#kontakt" class="flex items-center gap-2 text-sm hover:text-orange-500 transition-colors">
+              <ChevronRight class="w-3.5 h-3.5 text-orange-500" /> Kontakt
+            </a>
+          </div>
+        </div>
+
+        {/* City pages */}
+        <div>
+          <h2 class="text-xl font-bold mb-5 text-orange-500 border-b border-gray-100 dark:border-navy-800 pb-2">Kontejnerji po mestih</h2>
+          <div class="space-y-3">
+            {cities.map((city) => (
+              <a
+                key={city.slug}
+                href={`/kontejner/${city.slug}`}
+                class="flex items-center gap-2 text-sm hover:text-orange-500 transition-colors"
+              >
+                <ChevronRight class="w-3.5 h-3.5 text-orange-500" />
+                Kontejner {city.name}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Keyword pages */}
+        <div>
+          <h2 class="text-xl font-bold mb-5 text-orange-500 border-b border-gray-100 dark:border-navy-800 pb-2">O kontejnerjih</h2>
+          <div class="space-y-3">
+            {keywords.map((kw) => (
+              <a
+                key={kw.slug}
+                href={`/${kw.slug}`}
+                class="flex items-center gap-2 text-sm hover:text-orange-500 transition-colors"
+              >
+                <ChevronRight class="w-3.5 h-3.5 text-orange-500" />
+                {kw.h1.split(' – ')[0]}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

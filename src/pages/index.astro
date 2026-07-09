@@ -1,0 +1,577 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContainerFilter from '../components/ContainerFilter';
+import ContactForm from '../components/ContactForm';
+import {
+  ChevronDown,
+  Star,
+  Shield,
+  Truck,
+  Package,
+  Phone,
+  Mail,
+  MapPin,
+  ArrowRight,
+  CheckCircle,
+  Container,
+  Layers,
+  Award,
+  Clock,
+  ChevronRight,
+  Globe,
+} from 'lucide-react';
+
+const stats = [
+  { value: '500+', label: 'Kontejnerjev v zalogi', icon: Container },
+  { value: '12+', label: 'Let izkušenj', icon: Award },
+  { value: '1.200+', label: 'Zadovoljnih strank', icon: Star },
+  { value: '48h', label: 'Dostava po Sloveniji', icon: Clock },
+];
+
+const features = [
+  {
+    icon: Shield,
+    title: 'Certificirani in preverjeni',
+    desc: 'Vsi naši kontejnerji so certificirani po mednarodnih standardih ISO in pregledani pred dostavo.',
+  },
+  {
+    icon: Truck,
+    title: 'Dostava po vsej Sloveniji',
+    desc: 'Zagotavljamo hitro in zanesljivo dostavo v roku 48 ur na vsak naslov v Sloveniji.',
+  },
+  {
+    icon: Layers,
+    title: 'Široka ponudba',
+    desc: 'Od standardnih do hladilnih kontejnerjev – imamo rešitev za vsako potrebo.',
+  },
+  {
+    icon: Package,
+    title: 'Prilagojene rešitve',
+    desc: 'Kontejnerje lahko prilagodimo vašim potrebam – predelave, odprtine, barve in več.',
+  },
+];
+
+const testimonials = [
+  {
+    name: 'Marko Horvat',
+    company: 'Horvat Logistika d.o.o.',
+    text: 'Star Containers so nam zagotovili odlične kontejnerje za naše logistično središče. Kakovost je izjemna, dostava pa je bila točna do ure.',
+    rating: 5,
+    avatar: 'MH',
+  },
+  {
+    name: 'Ana Kovač',
+    company: 'Kovač Gradnje',
+    text: 'Že tretjič naročamo pri Star Containers. Vsakič odlična izkušnja – profesionalna ekipa, vrhunski kontejnerji in super cene.',
+    rating: 5,
+    avatar: 'AK',
+  },
+  {
+    name: 'Luka Novak',
+    company: 'Novak Trade',
+    text: 'Hladilni kontejner smo potrebovali urgentno. Star Containers so ga dostavili v 24 urah. Izjemna storitev!',
+    rating: 5,
+    avatar: 'LN',
+  },
+];
+
+const schema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "STAR Containers",
+  "description": "Vodilni prodajalec ladijskih kontejnerjev v Sloveniji",
+  "telephone": "+38630555001",
+  "email": "info@starcontainers.si",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Industrijska ulica 12",
+    "addressLocality": "Ljubljana",
+    "postalCode": "1000",
+    "addressCountry": "SI"
+  },
+  "priceRange": "€1.790 – €9.900 (brez DDV)",
+  "openingHours": "Mo-Fr 07:00-18:00, Sa 08:00-13:00"
+});
+---
+
+<Layout
+  title="STAR Containers – Ladijski kontejnerji za prodajo po Sloveniji"
+  description="STAR Containers – Vodilni prodajalec ladijskih kontejnerjev v Sloveniji. 10ft, 20ft, 40ft, High Cube, hladilni kontejnerji. Dostava 48h. Brezplačno povpraševanje."
+  keywords="kontejner, ladijski kontejner, kontejnerji za prodajo, kontejner Slovenija, 20ft kontejner, 40ft kontejner, high cube kontejner, hladilni kontejner, kontejner cena, kontejner Ljubljana, kontejner Maribor, kontejner Ptuj"
+  canonical="https://starcontainers.si"
+  schema={schema}
+>
+  {/* HERO */}
+  <section class="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-navy-800 via-navy-700 to-navy-900">
+    <div class="absolute inset-0">
+      <img
+        src="https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        alt="Containers"
+        class="w-full h-full object-cover opacity-15"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-navy-800/95 via-navy-700/80 to-navy-800/50"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-transparent to-transparent"></div>
+    </div>
+
+    <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-orange-500 via-orange-400 to-transparent"></div>
+    <div class="absolute top-1/4 right-0 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 flex flex-col justify-center min-h-screen">
+      <div class="max-w-3xl">
+        <span class="scroll-animate opacity-0 inline-flex items-center gap-2 bg-orange-500/10 text-orange-400 border border-orange-500/20 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6" data-anim="animate-fade-in-up">
+          <span class="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse-slow"></span>
+          Direktno iz Hongkonga
+        </span>
+        <h1 class="scroll-animate opacity-0 text-5xl sm:text-6xl md:text-7xl font-black text-white leading-tight tracking-tight mb-6" data-anim="animate-fade-in-up" style="animation-delay: 200ms;">
+          Ladijski <span class="text-orange-500">kontejnerji</span> <br class="hidden sm:block" />
+          za prodajo po Sloveniji
+        </h1>
+        <p class="scroll-animate opacity-0 text-lg sm:text-xl text-gray-300 leading-relaxed mb-10 max-w-2xl" data-anim="animate-fade-in-up" style="animation-delay: 400ms;">
+          Kakovostni novih in rabljeni kontejnerji po konkurenčnih cenah. Strateški depoji v Ptuju in Kopru za hitro in zanesljivo dostavo v roku 48 ur.
+        </p>
+        <div class="scroll-animate opacity-0 flex flex-wrap gap-4" data-anim="animate-fade-in-up" style="animation-delay: 600ms;">
+          <a
+            href="#kontakt"
+            class="group flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-4.5 rounded-full shadow-lg shadow-orange-500/25 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-orange-500/35"
+          >
+            Brezplačno povpraševanje
+            <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </a>
+          <a
+            href="#kontejnerji"
+            class="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold px-8 py-4.5 rounded-full transition-all duration-300 hover:-translate-y-1"
+          >
+            Ogled ponudbe
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a
+      href="#o-nas"
+      class="scroll-animate opacity-0 absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-1.5 text-white/50 hover:text-white transition-colors duration-300"
+      data-anim="animate-fade-in-up"
+      style="animation-delay: 800ms;"
+    >
+      <span class="text-xs font-medium tracking-widest uppercase">Razišči</span>
+      <ChevronDown class="w-5 h-5" />
+    </a>
+  </section>
+
+  {/* ABOUT */}
+  <section id="o-nas" class="py-24 bg-white dark:bg-navy-800/30 border-b border-gray-100 dark:border-navy-700/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="scroll-animate opacity-0" data-anim="animate-fade-in-up">
+          <span class="inline-block text-orange-500 font-semibold text-sm tracking-widest uppercase mb-4">
+            O podjetju
+          </span>
+          <h2 class="text-4xl lg:text-5xl font-black leading-tight mb-6">
+            Vaš zaupanja vreden <span class="text-orange-500">partner za kontejnerje</span>
+          </h2>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+            Star Containers je slovensko podjetje z več kot 12-letnimi izkušnjami na področju
+            prodaje in dostave ladijskih kontejnerjev. Naša misija je zagotoviti visokokakovostne
+            kontejnerje po konkurenčnih cenah z izjemno storitvijo.
+          </p>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
+            Specializiramo se za prodajo standardnih, High Cube in hladilnih kontejnerjev, pridobljenih direktno iz Hongkonga brez posrednikov,
+            ki jih dostavljamo po vsej Sloveniji in regiji. Vsak kontejner je pregledan,
+            certificiran in pripravljen za takojšnjo uporabo. Naša prednost je direktna nabava iz Hongkonga, kar pomeni nižje cene in boljšo kakovost.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            {['ISO certificirani', 'Dostava 48h', 'Prilagoditve po meri', 'Garancija kakovosti'].map((tag) => (
+              <span
+                key={tag}
+                class="flex items-center gap-1.5 text-sm font-semibold text-orange-700 dark:text-orange-400 bg-orange-50 dark:bg-orange-950/40 border border-orange-200 dark:border-orange-900/50 px-4 py-1.5 rounded-full"
+              >
+                <CheckCircle class="w-3.5 h-3.5" />
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl">
+            <img
+              src="https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Container yard"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+          </div>
+          <div class="absolute -bottom-6 -left-6 bg-orange-500 text-white rounded-2xl p-6 shadow-xl shadow-orange-500/30">
+            <div class="text-3xl font-black">1.200+</div>
+            <div class="text-sm font-medium text-orange-100 mt-0.5">Zadovoljnih strank</div>
+          </div>
+          <div class="absolute -top-4 -right-4 bg-white dark:bg-gray-800 rounded-xl px-5 py-3 shadow-xl border border-gray-100 dark:border-gray-700">
+            <div class="flex items-center gap-1.5">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} class="w-4 h-4 fill-orange-400 text-orange-400" />
+              ))}
+            </div>
+            <div class="text-xs font-semibold text-gray-600 dark:text-gray-300 mt-1">Ocena 5.0 / 5.0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* STATS */}
+  <section class="py-20 bg-navy-800 dark:bg-navy-900 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 left-1/4 w-64 h-64 bg-orange-500 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 right-1/4 w-96 h-64 bg-orange-600 rounded-full blur-3xl"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        {stats.map((stat, i) => (
+          <div
+            key={stat.label}
+            class="scroll-animate opacity-0 text-center group"
+            style={`animation-delay: ${i * 100}ms;`}
+          >
+            <div class="w-14 h-14 bg-orange-500/15 border border-orange-500/30 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-500/25 group-hover:border-orange-500/50 transition-all duration-300">
+              <stat.icon class="w-6 h-6 text-orange-400" />
+            </div>
+            <div class="text-4xl lg:text-5xl font-black text-white">{stat.value}</div>
+            <div class="text-sm text-gray-400 font-medium mt-1.5">{stat.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* PRODUCTS */}
+  <section id="kontejnerji" class="py-24 bg-white dark:bg-navy-800/20 border-b border-gray-100 dark:border-navy-700/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="inline-block text-orange-500 font-semibold text-sm tracking-widest uppercase mb-4">
+          Naša ponudba
+        </span>
+        <h2 class="text-4xl lg:text-5xl font-black leading-tight mb-4">
+          Izberite <span class="text-orange-500">pravi kontejner</span>
+        </h2>
+        <p class="text-gray-500 dark:text-gray-400">
+          Vsi kontejnerji so pregledani, certificirani in takoj dostopni.
+        </p>
+        <a
+          href="https://www.facebook.com/profile.php?id=61590607888405"
+          target="_blank"
+          rel="noopener"
+          class="inline-flex items-center gap-2.5 mt-5 bg-[#1877F2] hover:bg-[#166fe5] text-white font-bold px-6 py-3 rounded-full transition-all hover:shadow-lg hover:shadow-blue-500/25 hover:-translate-y-0.5"
+        >
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Aktualna zaloga na Facebooku
+        </a>
+      </div>
+
+      <ContainerFilter client:load />
+    </div>
+  </section>
+
+  {/* RAL COLOR PALETTE */}
+  <section class="py-20 bg-gray-50 dark:bg-navy-900/40 border-b border-gray-100 dark:border-navy-700/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="inline-block text-orange-500 font-semibold text-sm tracking-widest uppercase mb-4">
+          Prilagoditve
+        </span>
+        <h2 class="text-4xl lg:text-5xl font-black leading-tight mb-4">
+          Izberite svojo <span class="text-orange-500">barvo RAL</span>
+        </h2>
+        <p class="text-gray-500 dark:text-gray-400">
+          Kontejnerje lakiramo po vašem izboru. Spodaj so najpogostejše barve RAL – na voljo je celoten RAL vzorčnik.
+        </p>
+      </div>
+      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9 gap-3">
+        {[
+          { ral: 'RAL 9010', name: 'Bela', hex: '#F4F4F4', light: true },
+          { ral: 'RAL 9016', name: 'Prometna bela', hex: '#F6F6F6', light: true },
+          { ral: 'RAL 9002', name: 'Sivo bela', hex: '#E7E0D4', light: true },
+          { ral: 'RAL 7035', name: 'Svetlo siva', hex: '#D7D7D7', light: true },
+          { ral: 'RAL 7042', name: 'Prometna siva', hex: '#8F9695', light: false },
+          { ral: 'RAL 7016', name: 'Antracit', hex: '#293133', light: false },
+          { ral: 'RAL 9005', name: 'Črna', hex: '#0A0A0A', light: false },
+          { ral: 'RAL 1015', name: 'Svetla slonovina', hex: '#E6D690', light: true },
+          { ral: 'RAL 1003', name: 'Signalno rumena', hex: '#F9A800', light: true },
+          { ral: 'RAL 1007', name: 'Narcisno rumena', hex: '#E5AC00', light: true },
+          { ral: 'RAL 2000', name: 'Rumeno oranžna', hex: '#ED760E', light: false },
+          { ral: 'RAL 2004', name: 'Čista oranžna', hex: '#F44611', light: false },
+          { ral: 'RAL 3000', name: 'Ognjeno rdeča', hex: '#AF2B1E', light: false },
+          { ral: 'RAL 3002', name: 'Karmin rdeča', hex: '#A52019', light: false },
+          { ral: 'RAL 3020', name: 'Prometna rdeča', hex: '#CC0500', light: false },
+          { ral: 'RAL 3031', name: 'Orient rdeča', hex: '#763C28', light: false },
+          { ral: 'RAL 4003', name: 'Reseda vijolična', hex: '#8D1D82', light: false },
+          { ral: 'RAL 5002', name: 'Ultramarin modra', hex: '#20214F', light: false },
+          { ral: 'RAL 5010', name: 'Encijan modra', hex: '#0E4472', light: false },
+          { ral: 'RAL 5013', name: 'Kobalt modra', hex: '#1D1E33', light: false },
+          { ral: 'RAL 5015', name: 'Nebeško modra', hex: '#2271B3', light: false },
+          { ral: 'RAL 5024', name: 'Pastelno modra', hex: '#5D9B9B', light: false },
+          { ral: 'RAL 6005', name: 'Mah zelena', hex: '#2F4538', light: false },
+          { ral: 'RAL 6011', name: 'Reseda zelena', hex: '#587246', light: false },
+          { ral: 'RAL 6018', name: 'Rumeno zelena', hex: '#57A639', light: false },
+          { ral: 'RAL 6029', name: 'Mint zelena', hex: '#1E5945', light: false },
+          { ral: 'RAL 8001', name: 'Ohrovt rjava', hex: '#9E551B', light: false },
+        ].map((color) => (
+          <div key={color.ral} class="group flex flex-col items-center">
+            <div
+              class="w-full aspect-square rounded-xl shadow-md border border-black/10 mb-2 group-hover:scale-105 group-hover:shadow-lg transition-all duration-200"
+              style={{ backgroundColor: color.hex }}
+            ></div>
+            <div class="text-center">
+              <div class="text-xs font-bold text-gray-800 dark:text-gray-200">{color.ral}</div>
+              <div class="text-xs text-gray-500 dark:text-gray-400 leading-tight mt-0.5">{color.name}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div class="mt-10 text-center">
+        <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+          Ne vidite želene barve? Na voljo je celoten RAL Classic vzorčnik z več kot 200 barvami.
+        </p>
+        <a
+          href="#kontakt"
+          class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold px-7 py-3.5 rounded-full transition-all hover:shadow-lg hover:shadow-orange-500/25 hover:-translate-y-0.5"
+        >
+          Povprašajte o barvah
+          <ArrowRight class="w-4 h-4" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* FEATURES */}
+  <section id="prednosti" class="py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="inline-block text-orange-500 font-semibold text-sm tracking-widest uppercase mb-4">
+          Zakaj Star Containers
+        </span>
+        <h2 class="text-4xl lg:text-5xl font-black leading-tight">
+          Prednosti, ki nas <span class="text-orange-500">ločijo od ostalih</span>
+        </h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {features.map((feature, i) => (
+          <div
+            key={feature.title}
+            class="scroll-animate opacity-0 group p-7 rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 hover:border-orange-200 dark:hover:border-orange-900 hover:shadow-xl hover:shadow-orange-500/5 transition-all duration-300 hover:-translate-y-2"
+            style={`animation-delay: ${i * 100}ms;`}
+          >
+            <div class="w-12 h-12 bg-orange-50 dark:bg-orange-950/40 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-100 dark:group-hover:bg-orange-950/70 transition-colors">
+              <feature.icon class="w-5.5 h-5.5 text-orange-500" />
+            </div>
+            <h3 class="font-bold text-lg mb-2.5">{feature.title}</h3>
+            <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">{feature.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* PRODUCTION & LOCATIONS */}
+  <section class="py-20 overflow-hidden bg-gradient-to-br from-navy-50 via-white to-navy-50 dark:from-navy-800/40 dark:via-navy-800/20 dark:to-transparent border-b border-gray-100 dark:border-navy-700/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-block text-orange-500 font-semibold text-sm tracking-widest uppercase mb-4">
+            O nas
+          </div>
+          <h2 class="text-4xl font-black mb-6">
+            Direktno iz <span class="text-orange-500">Hongkonga</span>
+          </h2>
+          <p class="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+            STAR Containers nabavlja kontejnerje direktno iz Hongkonga, brez posrednikov.
+            To pomeni nižje cene in boljšo kakovost za naše stranke v Sloveniji in celotni Evropi.
+          </p>
+          <div class="space-y-4 mt-8">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-orange-100 dark:bg-orange-950/40 rounded-lg flex items-center justify-center flex-shrink-0">
+                <MapPin class="w-6 h-6 text-orange-500" />
+              </div>
+              <div>
+                <h3 class="font-bold mb-1">Proizvodnja Hong Kong</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400">
+                  Certificirani kontejnerji iz vodilnih proizvajalcev v Hongkongu.
+                  Direktna nabava brez posrednikov.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-orange-100 dark:bg-orange-950/40 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Truck class="w-6 h-6 text-orange-500" />
+              </div>
+              <div>
+                <h3 class="font-bold mb-1">Depo Slovenija (Koper, Ptuj)</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400">
+                  Strateška lokacija v Ptuju za hitro dostavo po vsej Sloveniji.
+                  Dostava v 48 urah.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-orange-100 dark:bg-orange-950/40 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Globe class="w-6 h-6 text-orange-500" />
+              </div>
+              <div>
+                <h3 class="font-bold mb-1">Prodaja za celotno Evropo</h3>
+                <p class="text-sm text-gray-600 dark:text-gray-400">
+                  Poleg Slovenije poslujemo tudi z Avstrijo, Hrvaško, Italijo in drugimi evropskimi državami.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://www.starcontainers.si/images/7_How_Do_You_Make_Shipping_Containers.png"
+            alt="Proizvodnja kontejnerjev"
+            class="rounded-2xl shadow-2xl w-full h-auto lg:scale-125 lg:origin-left"
+          />
+          <p class="text-xs text-gray-500 dark:text-gray-400 mt-3 text-center">
+            Proizvodnja kontejnerjev iz Hongkonga
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* CTA BANNER */}
+  <section class="py-20 bg-orange-500 relative overflow-hidden">
+    <div class="absolute inset-0">
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-orange-400 rounded-full opacity-40"></div>
+      <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-orange-600 rounded-full opacity-40"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl lg:text-5xl font-black text-white mb-4">
+        Potrebujete kontejner? <br class="hidden sm:block" />
+        Pokličite nas danes!
+      </h2>
+      <p class="text-orange-100 text-lg mb-8 max-w-xl mx-auto">
+        Brezplačno povpraševanje brez obveznosti. Odgovorimo v 2 urah.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a
+          href="tel:+38630555001"
+          class="flex items-center gap-2.5 bg-white text-orange-600 hover:bg-orange-50 font-bold px-7 py-4 rounded-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+        >
+          <Phone class="w-4.5 h-4.5" />
+          +386 30 555 001
+        </a>
+        <a
+          href="#kontakt"
+          class="flex items-center gap-2 bg-black/20 hover:bg-black/30 backdrop-blur-sm text-white font-bold px-7 py-4 rounded-full transition-all duration-300 border border-white/20 hover:-translate-y-1"
+        >
+          Pošlji povpraševanje
+          <ArrowRight class="w-4 h-4" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* TESTIMONIALS */}
+  <section id="mnenja" class="py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="inline-block text-orange-500 font-semibold text-sm tracking-widest uppercase mb-4">
+          Mnenja strank
+        </span>
+        <h2 class="text-4xl lg:text-5xl font-black leading-tight">
+          Kaj pravijo naše <span class="text-orange-500">stranke</span>
+        </h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-7">
+        {testimonials.map((t, i) => (
+          <div
+            key={t.name}
+            class="scroll-animate opacity-0 group p-8 rounded-2xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 hover:border-orange-200 dark:hover:border-orange-900 hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5"
+            style={`animation-delay: ${i * 120}ms;`}
+          >
+            <div class="flex gap-1 mb-5">
+              {[...Array(t.rating)].map((_, j) => (
+                <Star key={j} class="w-4 h-4 fill-orange-400 text-orange-400" />
+              ))}
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 italic">
+              "{t.text}"
+            </p>
+            <div class="flex items-center gap-3 pt-5 border-t border-gray-100 dark:border-gray-800">
+              <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                {t.avatar}
+              </div>
+              <div>
+                <div class="font-bold text-sm">{t.name}</div>
+                <div class="text-xs text-gray-500 dark:text-gray-400">{t.company}</div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* CONTACT */}
+  <section id="kontakt" class="py-24 bg-navy-50 dark:bg-navy-900/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <div class="scroll-animate opacity-0" data-anim="animate-fade-in-up">
+          <span class="inline-block text-orange-500 font-semibold text-sm tracking-widest uppercase mb-4">
+            Kontakt
+          </span>
+          <h2 class="text-4xl lg:text-5xl font-black leading-tight mb-6">
+            Stopite v <span class="text-orange-500">stik z nami</span>
+          </h2>
+          <p class="text-gray-600 dark:text-gray-400 mb-10 leading-relaxed">
+            Imate vprašanja o kontejnerjih ali želite prejeti ponudbo? Kontaktirajte nas –
+            odgovorimo hitro in brez zapletov.
+          </p>
+
+          <div class="space-y-5">
+            {[
+              { icon: Phone, label: 'Telefon', value: '+386 30 555 001', href: 'tel:+38630555001' },
+              { icon: Mail, label: 'E-pošta', value: 'info@starcontainers.si', href: 'mailto:info@starcontainers.si' },
+              { icon: MapPin, label: 'Naslov', value: 'Puhova ulica 12a, 2250 Ptuj, SI', href: '#' },
+            ].map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                class="flex items-center gap-4 p-5 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:border-orange-200 dark:hover:border-orange-900 transition-all group"
+              >
+                <div class="w-11 h-11 bg-orange-50 dark:bg-orange-950/40 rounded-xl flex items-center justify-center group-hover:bg-orange-100 dark:group-hover:bg-orange-950/70 transition-colors flex-shrink-0">
+                  <item.icon class="w-5 h-5 text-orange-500" />
+                </div>
+                <div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400 font-medium">{item.label}</div>
+                  <div class="font-semibold text-gray-900 dark:text-white">{item.value}</div>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div class="mt-8 p-6 bg-navy-800 dark:bg-navy-900 rounded-2xl">
+            <div class="text-sm font-bold text-white mb-3">Delovni čas</div>
+            <div class="space-y-1.5 text-sm text-gray-400">
+              <div class="flex justify-between">
+                <span>Ponedeljek – Petek</span>
+                <span class="text-white font-medium">7:00 – 18:00</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Sobota</span>
+                <span class="text-white font-medium">8:00 – 13:00</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Nedelja</span>
+                <span class="text-orange-400 font-medium">Zaprto</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Contact Form Island */}
+        <ContactForm client:load />
+      </div>
+    </div>
+  </section>
+</Layout>

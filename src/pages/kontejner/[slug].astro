@@ -1,0 +1,317 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { cities, containerTypes } from '../../seoData';
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Truck,
+  Shield,
+  ChevronRight,
+  ArrowRight,
+  Clock,
+  Star,
+} from 'lucide-react';
+
+export function getStaticPaths() {
+  return cities.map((city) => ({
+    params: { slug: city.slug },
+    props: { city },
+  }));
+}
+
+const { city } = Astro.props;
+const otherCities = cities.filter((c) => c.slug !== city.slug).slice(0, 6);
+
+const schema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": `Ladijski kontejner ${city.name}`,
+  "description": `Ladijski kontejnerji za prodajo v ${city.name}, ${city.region}. Dostava 48h.`,
+  "brand": { "@type": "Brand", "name": "STAR Containers" },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "EUR",
+    "lowPrice": "1490",
+    "highPrice": "4990",
+    "availability": "https://schema.org/InStock"
+  },
+  "availableDeliveryMethod": "https://schema.org/OnSitePickup"
+});
+---
+
+<Layout
+  title={`Kontejner ${city.name} – Ladijski kontejnerji za prodajo | STAR Containers`}
+  description={`Kupite ladijski kontejner v ${city.name}. Direktno iz Hongkonga. 10ft, 20ft, 40ft, High Cube, hladilni kontejnerji. Dostava v ${city.name} v 48h. Certificirani, vodoodporni. STAR Containers.`}
+  keywords={city.keywords.join(', ')}
+  canonical={`https://starcontainers.si/kontejner/${city.slug}`}
+  schema={schema}
+>
+  {/* Hero */}
+  <section class="relative py-20 lg:py-28 overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-orange-900/30">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-orange-500 rounded-full blur-3xl"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+      <div class="flex items-center gap-2 text-orange-400 text-sm font-medium mb-4">
+        <MapPin class="w-4 h-4" />
+        {city.region} regija
+      </div>
+      <h1 class="text-4xl lg:text-6xl font-black text-white mb-6 leading-tight">
+        Kontejner <span class="text-orange-400">{city.name}</span>
+      </h1>
+      <p class="text-lg text-gray-300 max-w-2xl leading-relaxed mb-8">
+        Kupite certificirani ladijski kontejner v {city.name} z dostavo v 48 urah. {city.description.split('.')[0]}.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#kontakt" class="group flex items-center gap-2 bg-orange-500 hover:bg-orange-400 text-white font-bold px-7 py-4 rounded-full transition-all hover:shadow-xl hover:shadow-orange-500/25 hover:-translate-y-1">
+          Povpraševanje za {city.name}
+          <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        </a>
+        <a href="tel:+38630555001" class="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold px-7 py-4 rounded-full transition-all hover:-translate-y-1">
+          <Phone class="w-4 h-4" />
+          Pokličite nas
+        </a>
+      </div>
+      <div class="flex items-center gap-6 mt-10 pt-8 border-t border-white/10">
+        <div class="text-center">
+          <div class="text-2xl font-black text-orange-400">48h</div>
+          <div class="text-xs text-gray-400">Dostava</div>
+        </div>
+        <div class="w-px h-8 bg-white/10"></div>
+        <div class="text-center">
+          <div class="text-2xl font-black text-orange-400">500+</div>
+          <div class="text-xs text-gray-400">V zalogi</div>
+        </div>
+        <div class="w-px h-8 bg-white/10"></div>
+        <div class="text-center">
+          <div class="text-2xl font-black text-orange-400">ISO</div>
+          <div class="text-xs text-gray-400">Certificirano</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Content */}
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-3 gap-10">
+        <div class="lg:col-span-2">
+          <h2 class="text-3xl font-black mb-6">
+            Ladijski kontejnerji za prodajo v <span class="text-orange-500">{city.name}</span>
+          </h2>
+          <div class="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed space-y-4">
+            <p>{city.description}</p>
+            <p>
+              Star Containers zagotavlja dostavo kontejnerjev v {city.name} in celotni {city.region} regiji v roku 48 ur.
+              Vsi kontejnerji so pregledani, ISO certificirani in pripravljeni za takojšnjo uporabo.
+            </p>
+            <p>
+              V {city.name} smo že dostavili več kot 100 kontejnerjev za različne namene: skladiščenje, gradbeništvo,
+              transport, kmetijstvo in adaptacije. Naše stranke v {city.name} cenijo hitrost dostave, kakovost
+              kontejnerjev in konkurenčne cene.
+            </p>
+          </div>
+
+          {/* Container types table */}
+          <div class="mt-10">
+            <h3 class="text-xl font-bold mb-4">Cene kontejnerjev za {city.name}</h3>
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm">
+                <thead>
+                  <tr class="border-b border-gray-200 dark:border-gray-700">
+                    <th class="text-left py-3 px-4 font-bold">Tip kontejnerja</th>
+                    <th class="text-left py-3 px-4 font-bold">Dimenzije</th>
+                    <th class="text-left py-3 px-4 font-bold">Prostornina</th>
+                    <th class="text-left py-3 px-4 font-bold">Cena od (brez DDV)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {containerTypes.map((ct) => (
+                    <tr key={ct.slug} class="border-b border-gray-100 dark:border-gray-800 hover:bg-orange-50 dark:hover:bg-orange-950/20 transition-colors">
+                      <td class="py-3 px-4 font-semibold">{ct.name}</td>
+                      <td class="py-3 px-4 text-gray-600 dark:text-gray-400">{ct.dims}</td>
+                      <td class="py-3 px-4 text-gray-600 dark:text-gray-400">{ct.capacity}</td>
+                      <td class="py-3 px-4 font-bold text-orange-500">€{ct.price}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Benefits */}
+          <div class="mt-10 grid sm:grid-cols-2 gap-5">
+            {[
+              { icon: Truck, title: `Dostava v ${city.name}`, desc: 'Rok 48 ur po celotni regiji' },
+              { icon: Shield, title: 'ISO certificirani', desc: 'Vsi kontejnerji pregledani in certificirani' },
+              { icon: Clock, title: 'Hitra realizacija', desc: 'Od naročila do dostave v 2 dneh' },
+              { icon: Star, title: 'Garancija kakovosti', desc: 'Vodoodporni in strukturno brezhibni' },
+            ].map((b) => (
+              <div key={b.title} class="flex items-start gap-3 p-5 bg-gray-50 dark:bg-gray-900 rounded-xl">
+                <div class="w-10 h-10 bg-orange-100 dark:bg-orange-950/40 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <b.icon class="w-5 h-5 text-orange-500" />
+                </div>
+                <div>
+                  <div class="font-bold text-sm">{b.title}</div>
+                  <div class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{b.desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Sidebar */}
+        <div class="space-y-6">
+          {/* Contact card */}
+          <div class="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 border border-gray-100 dark:border-gray-800">
+            <h3 class="font-bold mb-4">Povpraševanje za {city.name}</h3>
+            <div class="space-y-3 text-sm">
+              <a href="tel:+38630555001" class="flex items-center gap-2.5 text-gray-600 dark:text-gray-400 hover:text-orange-500 transition-colors">
+                <Phone class="w-4 h-4 text-orange-500" />
+                +386 30 555 001
+              </a>
+              <a href="mailto:info@starcontainers.si" class="flex items-center gap-2.5 text-gray-600 dark:text-gray-400 hover:text-orange-500 transition-colors">
+                <Mail class="w-4 h-4 text-orange-500" />
+                info@starcontainers.si
+              </a>
+              <div class="flex items-center gap-2.5 text-gray-600 dark:text-gray-400">
+                <MapPin class="w-4 h-4 text-orange-500 flex-shrink-0" />
+                Puhova ulica 12a, 2250 Ptuj, SI
+              </div>
+            </div>
+            <a href="#kontakt" class="mt-4 block w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-xl text-center text-sm transition-colors">
+              Pošlji povpraševanje
+            </a>
+          </div>
+
+          {/* Other cities */}
+          <div class="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 border border-gray-100 dark:border-gray-800">
+            <h3 class="font-bold mb-4">Kontejnerji v drugih mestih</h3>
+            <div class="space-y-2">
+              {otherCities.map((c) => (
+                <a
+                  key={c.slug}
+                  href={`/kontejner/${c.slug}`}
+                  class="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-orange-500 transition-colors py-1"
+                >
+                  <ChevronRight class="w-3 h-3 text-orange-500" />
+                  Kontejner {c.name}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Keyword links */}
+          <div class="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 border border-gray-100 dark:border-gray-800">
+            <h3 class="font-bold mb-4">Več o kontejnerjih</h3>
+            <div class="space-y-2">
+              <a href="/kontejner-cena" class="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-orange-500 transition-colors py-1">
+                <ChevronRight class="w-3 h-3 text-orange-500" />
+                Kontejner cena
+              </a>
+              <a href="/ladijski-kontejner" class="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-orange-500 transition-colors py-1">
+                <ChevronRight class="w-3 h-3 text-orange-500" />
+                Ladijski kontejner
+              </a>
+              <a href="/kontejner-za-skladiscenje" class="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-orange-500 transition-colors py-1">
+                <ChevronRight class="w-3 h-3 text-orange-500" />
+                Kontejner za skladiščenje
+              </a>
+            </div>
+          </div>
+
+          {/* Facebook backlink */}
+          <a
+            href="https://www.facebook.com/profile.php?id=61590607888405"
+            target="_blank"
+            rel="noopener"
+            class="flex items-center gap-3 bg-[#1877F2] hover:bg-[#166fe5] text-white font-bold px-5 py-4 rounded-2xl transition-all hover:shadow-lg hover:shadow-blue-500/25 group"
+          >
+            <svg class="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <div>
+              <div class="text-xs text-blue-200 font-medium">Facebook</div>
+              <div class="text-sm">Aktualna zaloga</div>
+            </div>
+            <svg class="w-4 h-4 ml-auto group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+          </a>
+
+          {/* Skladiscko backlink */}
+          <div class="bg-navy-700 rounded-2xl p-6">
+            <div class="text-xs font-semibold text-orange-400 uppercase tracking-widest mb-2">Partnerski portal</div>
+            <h3 class="font-bold text-white mb-2">Iščete skladiščne rešitve?</h3>
+            <p class="text-navy-200 text-sm mb-4 leading-relaxed">
+              Obiščite <strong class="text-white">skladiscko.si</strong> – portal za skladiščne prostore, kontejnerje in logistične rešitve v Sloveniji.
+            </p>
+            <a
+              href="https://skladiscko.si/"
+              target="_blank"
+              rel="noopener"
+              class="flex items-center justify-between bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-xl text-sm transition-colors group"
+            >
+              Obiščite skladiscko.si
+              <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* FAQ */}
+  <section class="py-16 bg-gray-50 dark:bg-gray-900/50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-black mb-8 text-center">
+        Pogosta vprašanja – Kontejner {city.name}
+      </h2>
+      {[
+        {
+          q: `Kako hitro lahko dostavite kontejner v ${city.name}?`,
+          a: `Dostava kontejnerja v ${city.name} je običajno v roku 48 ur od potrditve naročila. Za nujne primere nudimo hitro dostavo v 24 urah, kadar je kontejner na zalogi.`,
+        },
+        {
+          q: `Katere velikosti kontejnerjev imate na zalogi za ${city.name}?`,
+          a: `Na zalogi imamo 10ft, 20ft, 40ft standardne kontejnerje, High Cube (HC) različice in hladilne kontejnerje. Vse velikosti so takoj dostopne za dostavo v ${city.name}.`,
+        },
+        {
+          q: `Ali potrebujem gradbeno dovoljenje za postavitev kontejnerja v ${city.name}?`,
+          a: `Za začasno postavitev kontejnerja (do 12 mesecev) običajno ni potrebno gradbeno dovoljenje. Priporočamo, da preverite lokalne predpise v občini ${city.name}.`,
+        },
+        {
+          q: `Kakšna je cena dostave kontejnerja v ${city.name}?`,
+          a: `Cena dostave je vključena v končno ponudbo in se razlikuje glede na lokacijo in velikost kontejnerja. Kontaktirajte nas za točno ponudbo za ${city.name}.`,
+        },
+      ].map((faq) => (
+        <div key={faq.q} class="mb-6 p-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800">
+          <h3 class="font-bold mb-2">{faq.q}</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{faq.a}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  {/* CTA */}
+  <section id="kontakt" class="py-16 bg-orange-500 relative overflow-hidden">
+    <div class="absolute inset-0">
+      <div class="absolute -top-24 -right-24 w-64 h-64 bg-orange-400 rounded-full opacity-30"></div>
+    </div>
+    <div class="relative max-w-3xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-black text-white mb-3">
+        Potrebujete kontejner v {city.name}?
+      </h2>
+      <p class="text-orange-100 mb-6">
+        Kontaktirajte nas za brezplačno ponudbo. Odgovorimo v 2 urah.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/#kontakt" class="flex items-center gap-2 bg-white text-orange-600 font-bold px-7 py-3.5 rounded-full hover:bg-orange-50 transition-all hover:-translate-y-0.5">
+          Pošlji povpraševanje
+          <ArrowRight class="w-4 h-4" />
+        </a>
+        <a href="tel:+38630555001" class="flex items-center gap-2 bg-black/20 border border-white/20 text-white font-bold px-7 py-3.5 rounded-full hover:bg-black/30 transition-all hover:-translate-y-0.5">
+          <Phone class="w-4 h-4" />
+          +386 30 555 001
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
