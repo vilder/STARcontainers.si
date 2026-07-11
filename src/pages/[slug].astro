@@ -26,10 +26,10 @@ const articleSchema = {
   "@type": "Article",
   "headline": kw.h1,
   "description": kw.description,
-  "image": `https://starcontainers.si${kw.image}`,
+  "image": `https://www.starcontainers.si${kw.image}`,
   "author": { "@type": "Organization", "name": "STAR Containers" },
-  "publisher": { "@type": "Organization", "name": "STAR Containers", "url": "https://starcontainers.si" },
-  "isPartOf": { "@type": "WebSite", "name": "STAR Containers", "url": "https://starcontainers.si" }
+  "publisher": { "@type": "Organization", "name": "STAR Containers", "url": "https://www.starcontainers.si" },
+  "isPartOf": { "@type": "WebSite", "name": "STAR Containers", "url": "https://www.starcontainers.si" }
 };
 
 const faqSchema = {
@@ -42,14 +42,24 @@ const faqSchema = {
   }))
 };
 
-const combinedSchema = JSON.stringify([articleSchema, faqSchema]);
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Domov", "item": "https://www.starcontainers.si" },
+    { "@type": "ListItem", "position": 2, "name": kw.h1.split(' – ')[0], "item": `https://www.starcontainers.si/${kw.slug}` }
+  ]
+};
+
+const combinedSchema = JSON.stringify([articleSchema, faqSchema, breadcrumbSchema]);
 ---
 
 <Layout
   title={kw.title}
   description={kw.description}
   keywords={kw.keywords.join(', ')}
-  canonical={`https://starcontainers.si/${kw.slug}`}
+  canonical={`https://www.starcontainers.si/${kw.slug}`}
+  image={`https://www.starcontainers.si${kw.image}`}
   schema={combinedSchema}
 >
   {/* Hero */}

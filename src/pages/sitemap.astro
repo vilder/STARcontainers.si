@@ -56,6 +56,10 @@ import { ChevronRight } from 'lucide-react';
         <div>
           <h2 class="text-xl font-bold mb-5 text-orange-500 border-b border-gray-100 dark:border-navy-800 pb-2">O kontejnerjih</h2>
           <div class="space-y-3">
+            <a href="/skladiscni-kontejner" class="flex items-center gap-2 text-sm hover:text-orange-500 transition-colors">
+              <ChevronRight class="w-3.5 h-3.5 text-orange-500" />
+              Skladiščni kontejner
+            </a>
             {keywords.map((kw) => (
               <a
                 key={kw.slug}

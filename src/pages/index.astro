@@ -77,20 +77,26 @@ const testimonials = [
 
 const schema = JSON.stringify({
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": ["LocalBusiness", "Organization"],
   "name": "STAR Containers",
   "description": "Vodilni prodajalec ladijskih kontejnerjev v Sloveniji",
   "telephone": "+38630555001",
   "email": "info@starcontainers.si",
+  "url": "https://www.starcontainers.si",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Industrijska ulica 12",
-    "addressLocality": "Ljubljana",
-    "postalCode": "1000",
+    "streetAddress": "Puhova ulica 12a",
+    "addressLocality": "Ptuj",
+    "postalCode": "2250",
     "addressCountry": "SI"
   },
   "priceRange": "€1.790 – €9.900 (brez DDV)",
-  "openingHours": "Mo-Fr 07:00-18:00, Sa 08:00-13:00"
+  "openingHours": "Mo-Fr 07:00-18:00, Sa 08:00-13:00",
+  "areaServed": { "@type": "Country", "name": "SI" },
+  "image": "https://www.starcontainers.si/logo_starcontainers.png",
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61590607888405"
+  ]
 });
 ---
 
@@ -98,7 +104,8 @@ const schema = JSON.stringify({
   title="STAR Containers – Ladijski kontejnerji za prodajo po Sloveniji"
   description="STAR Containers – Vodilni prodajalec ladijskih kontejnerjev v Sloveniji. 10ft, 20ft, 40ft, High Cube, hladilni kontejnerji. Dostava 48h. Brezplačno povpraševanje."
   keywords="kontejner, ladijski kontejner, kontejnerji za prodajo, kontejner Slovenija, 20ft kontejner, 40ft kontejner, high cube kontejner, hladilni kontejner, kontejner cena, kontejner Ljubljana, kontejner Maribor, kontejner Ptuj"
-  canonical="https://starcontainers.si"
+  image="https://www.starcontainers.si/photos/20ft-1.webp"
+  canonical="https://www.starcontainers.si"
   schema={schema}
 >
   {/* HERO */}

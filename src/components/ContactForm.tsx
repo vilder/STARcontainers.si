@@ -1,29 +1,13 @@
 import { useState } from 'react';
 import { Send, ArrowRight, CheckCircle } from 'lucide-react';
-import { createClient } from '@supabase/supabase-js';
 
-let supabaseClient: any = null;
-const getSupabase = () => {
-  if (!supabaseClient) {
-    const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL || import.meta.env.VITE_SUPABASE_URL || '';
-    const supabaseAnonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY || import.meta.env.VITE_SUPABASE_ANON_KEY || '';
-
-    if (!supabaseUrl || !supabaseAnonKey) {
-      if (typeof window !== 'undefined') {
-        throw new Error('Supabase credentials are required on the client.');
-      }
-      return {
-        functions: {
-          invoke: async () => ({
-            data: { success: false },
-            error: new Error('Supabase not initialized (build time)'),
-          }),
-        },
-      };
-    }
-    supabaseClient = createClient(supabaseUrl, supabaseAnonKey);
-  }
-  return supabaseClient;
+const GOOGLE_FORM_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSczK4-ovMRQAvtcIOqJ5GVyukWmUNwX0Q3E5RR_Po3yw2dhqA/formResponse';
+const FIELD_MAP = {
+  name: 'entry.1120910962',
+  email: 'entry.1384294012',
+  phone: 'entry.873864525',
+  service: 'entry.881419699',
+  message: 'entry.1499040418',
 };
 
 export default function ContactForm() {
@@ -36,22 +20,23 @@ export default function ContactForm() {
     setIsSubmitting(true);
     setSubmitStatus('idle');
     try {
-      const supabase = getSupabase();
-      const { data: result, error } = await supabase.functions.invoke('send-inquiry', {
-        body: formData,
+      const body = new URLSearchParams();
+      body.append(FIELD_MAP.name, formData.name);
+      body.append(FIELD_MAP.email, formData.email);
+      body.append(FIELD_MAP.phone, formData.phone);
+      body.append(FIELD_MAP.service, formData.service);
+      body.append(FIELD_MAP.message, formData.message);
+
+      await fetch(GOOGLE_FORM_ACTION, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: body.toString(),
       });
 
-      if (error) {
-        if (error.message?.includes('429') || error.message?.includes('Preveč')) {
-          alert('Preveč zahtev. Poskusite znova čez eno minuto.');
-        }
-        setSubmitStatus('error');
-      } else if (result?.success) {
-        setSubmitStatus('success');
-        setFormData({ name: '', email: '', phone: '', service: '', message: '' });
-      } else {
-        setSubmitStatus('error');
-      }
+      
+      setSubmitStatus('success');
+      setFormData({ name: '', email: '', phone: '', service: '', message: '' });
     } catch {
       setSubmitStatus('error');
     } finally {

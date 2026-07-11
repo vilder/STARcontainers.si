@@ -71,6 +71,9 @@ export default function Footer() {
                   {kw.h1.split(' – ')[0]}
                 </a>
               ))}
+              <a href="/skladiscni-kontejner" className="block text-sm hover:text-orange-400 transition-colors">
+                Skladiščni kontejner
+              </a>
             </div>
             <div className="font-bold text-white text-sm mb-4 mt-6">Kontakt</div>
             <div className="space-y-3 text-sm">
