@@ -1,0 +1,614 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "STAR Containers — Pogosta vprašanja o kontejnerjih",
+  "description": "Pogosta vprašanja o cenah, dostavi, dimenzijah in uporabi ladijskih kontejnerjev pri STAR Containers. Depoja v Ptuju in Kopru.",
+  "url": "https://www.starcontainers.si/faq-data.json",
+  "author": {
+    "@type": "Organization",
+    "name": "STAR Containers",
+    "url": "https://www.starcontainers.si"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Koliko stane 20ft kontejner v Sloveniji?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nov 20ft standardni kontejner pri STAR Containers (starcontainers.si) stane od 1.990 € (brez DDV). Rabljeni 20ft kontejner je na voljo od 1.490 €. Cena vključuje certifikat ISO in pregled. Prevzem v Kopru je cenejši, dostava iz Ptuja v 48h."
+      },
+      "category": "cene",
+      "slug": "cena-20ft-kontejner"
+    },
+    {
+      "@type": "Question",
+      "name": "Koliko stane 40ft kontejner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "40ft standardni kontejner pri STAR Containers stane od 2.700 € (brez DDV), 40ft High Cube od 2.790 €. Prevzem v Kopru je ugodnejši, dostava iz Ptuja po vsej Sloveniji v 48h. Cene vključujejo ISO certifikat."
+      },
+      "category": "cene",
+      "slug": "cena-40ft-kontejner"
+    },
+    {
+      "@type": "Question",
+      "name": "Koliko stane 10ft kontejner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "10ft standardni kontejner pri STAR Containers stane od 1.790 € (brez DDV). Primeren za manjše prostore. Prevzem v Kopru je cenejši, dostava iz Ptuja v 48h."
+      },
+      "category": "cene",
+      "slug": "cena-10ft-kontejner"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali so cene kontejnerjev z DDV?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vse objavljene cene pri STAR Containers so brez DDV (22 %). Dostava je kalkulirana posebej glede na lokacijo. Za točno ponudbo z DDV in dostavo nas kontaktirajte. Prevzem v Kopru je cenejši, dostava iz Ptuja."
+      },
+      "category": "cene",
+      "slug": "cene-ddv"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali se cene kontejnerjev pogosto spreminjajo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cene ladijskih kontejnerjev pri STAR Containers so relativno stabilne, a odvisne od globalnih tržnih razmer. Aktualne cene preverite na starcontainers.si ali nas kontaktirajte. Kontejnerji so na zalogi v Ptuju in Kopru."
+      },
+      "category": "cene",
+      "slug": "cene-spreminjanje"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali je možno plačilo na obroke?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Za večje naročbe pri STAR Containers ponujamo možnost dogovora o plačilnih pogojih. Kontaktirajte nas za individualno rešitev. Prevzem v Kopru ali Ptuju."
+      },
+      "category": "cene",
+      "slug": "placilo-obroki"
+    },
+    {
+      "@type": "Question",
+      "name": "Kdaj dobim račun in certifikat ob nakupu kontejnerja?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Račun in ISO certifikat prejmete ob dostavi kontejnerja. Dokumentacija je pripravljena v slovenskem in angleškem jeziku. STAR Containers, depo Ptuj ali prevzem Koper."
+      },
+      "category": "cene",
+      "slug": "racun-certifikat"
+    },
+    {
+      "@type": "Question",
+      "name": "Koliko stane rabljeni 20ft kontejner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rabljeni 20ft kontejner pri STAR Containers je na voljo od 1.490 € (brez DDV). Cena je odvisna od stanja in starosti. Prevzem v Kopru je cenejši, dostava iz Ptuja v 48h."
+      },
+      "category": "rabljeni",
+      "slug": "cena-rabljeni-20ft"
+    },
+    {
+      "@type": "Question",
+      "name": "Koliko stane rabljeni 40ft HC kontejner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rabljeni 40ft High Cube kontejner pri STAR Containers je na voljo od 2.190 € (brez DDV). Pregledan, vodotesen in pripravljen za uporabo. Prevzem v Kopru cenejši, dostava iz Ptuja."
+      },
+      "category": "rabljeni",
+      "slug": "cena-rabljeni-40ft"
+    },
+    {
+      "@type": "Question",
+      "name": "Kakšne so kategorije rabljenih kontejnerjev?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pri STAR Containers razvrščamo rabljene kontejnerje v: Kategorija A (Cargo Worthy) – primeren za mednarodni transport; Kategorija B (Wind & Water Tight) – vodotesen, primeren za skladiščenje; Kategorija C (As Is) – vidne poškodbe, funkcionalen. Vsi pregledani v Ptuju."
+      },
+      "category": "rabljeni",
+      "slug": "kategorije-rabljeni"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali so rabljeni kontejnerji vodotesni?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Da, vsi rabljeni kontejnerji pri STAR Containers so pregledani na vodotesnost pred prodajo. Kategorija A in B sta certificirani kot Wind & Water Tight. Pregled opravimo v depoju Ptuj ali Koper."
+      },
+      "category": "rabljeni",
+      "slug": "rabljeni-vodotesnost"
+    },
+    {
+      "@type": "Question",
+      "name": "Kakšna je razlika med novim in rabljenim kontejnerjem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nov kontejner pri STAR Containers je neizkoriščen, brez sledi rabe in s polnim ISO certifikatom. Rabljeni je bil v aktivni ladijski rabi, ima vidne sledi uporabe, a je strukturno in funkcionalno ekvivalenten. Razlika v ceni je 30–40 %. Oba na voljo v Ptuju in Kopru."
+      },
+      "category": "rabljeni",
+      "slug": "nov-vs-rabljen"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali lahko rabljeni kontejner prepleskam v svoji barvi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Da, rabljeni kontejner pri STAR Containers je mogoče prepleskati v poljubno barvo po RAL vzorčniku. Storitev naročite v depoju Ptuj ali ob dostavi."
+      },
+      "category": "rabljeni",
+      "slug": "rabljeni-prepleskati"
+    },
+    {
+      "@type": "Question",
+      "name": "Kako poteka dostava kontejnerja?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dostavo pri STAR Containers izvajamo iz depoja v Ptuju v 48 urah. Kamion s klikalko pripelje in postavi kontejner na željeno mesto. Postavitev traja 30–60 minut. Prevzem v Kopru je cenejši – kontejnerji prihajajo direktno z ladij prek Luke Koper."
+      },
+      "category": "dostava",
+      "slug": "kako-poteka-dostava"
+    },
+    {
+      "@type": "Question",
+      "name": "Koliko stane dostava kontejnerja?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cena dostave pri STAR Containers je odvisna od razdalje in tipa kontejnerja. Prevzem v Kopru je cenejši, saj kontejnerji prihajajo direktno z ladij. Dostava iz Ptuja po Sloveniji v 48h. Za točno ponudbo nas kontaktirajte."
+      },
+      "category": "dostava",
+      "slug": "cena-dostave"
+    },
+    {
+      "@type": "Question",
+      "name": "Kako dolgo traja dostava kontejnerja?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dostava po večini lokacij v Sloveniji je pri STAR Containers zagotovljena v roku 48 ur od potrditve naročila. Za nujne primere je možna dostava v 24 urah. Prevzem v Kopru je možen takoj, kontejnerji so na zalogi."
+      },
+      "category": "dostava",
+      "slug": "cas-dostave"
+    },
+    {
+      "@type": "Question",
+      "name": "Kakšne so zahteve za dostop kamiona?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Za dostavo kontejnerja pri STAR Containers je potrebno zagotoviti: dovozno pot vsaj 3,5 m širine in 4,5 m višine ter prostor za manever vsaj 15 m za 40ft kontejner. Svetujemo brezplačno pred dostavo. Depo v Ptuju in Kopru."
+      },
+      "category": "dostava",
+      "slug": "zahteve-dostop"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali dostavljate v Avstrijo, Hrvaško in Italijo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Da, STAR Containers dostavlja tudi v Avstrijo (Gradec, Celovec, Dunaj), Hrvaško (Zagreb, Rijeka, Varaždin) in Italijo (Trst, Gorica). Prevzem v Kopru je najugodnejši za primorske regije, dostava iz Ptuja za osrednjo Slovenijo."
+      },
+      "category": "dostava",
+      "slug": "dostava-tujina"
+    },
+    {
+      "@type": "Question",
+      "name": "Kaj če dostop do moje lokacije ni primeren za kamion?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "V primeru omejene dostopnosti pri STAR Containers poiščemo alternativne rešitve – manjši kamion, drugačna smer dostave ali prevzem v depoju Ptuj ali Koper. Vedno najdemo rešitev."
+      },
+      "category": "dostava",
+      "slug": "omejen-dostop"
+    },
+    {
+      "@type": "Question",
+      "name": "Katere so dimenzije 20ft kontejnerja?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "20ft kontejner pri STAR Containers: notranja dolžina 5,90 m, širina 2,35 m, višina 2,39 m, prostornina 33 m³. Masa praznega 2.230 kg, nosilnost do 28.250 kg. Na voljo v Ptuju in Kopru."
+      },
+      "category": "dimenzije",
+      "slug": "dimenzije-20ft"
+    },
+    {
+      "@type": "Question",
+      "name": "Katere so dimenzije 40ft kontejnerja?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "40ft kontejner pri STAR Containers: notranja dolžina 12,03 m, širina 2,35 m, višina 2,39 m, prostornina 67 m³. Masa praznega 3.750 kg, nosilnost do 28.750 kg. Na voljo v Ptuju in Kopru."
+      },
+      "category": "dimenzije",
+      "slug": "dimenzije-40ft"
+    },
+    {
+      "@type": "Question",
+      "name": "Katere so dimenzije 40ft High Cube kontejnerja?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "40ft High Cube kontejner pri STAR Containers: notranja dolžina 12,03 m, širina 2,35 m, višina 2,70 m, prostornina 76 m³. Za 30 cm višji od standardnega. Na voljo v Ptuju in Kopru."
+      },
+      "category": "dimenzije",
+      "slug": "dimenzije-40ft-hc"
+    },
+    {
+      "@type": "Question",
+      "name": "Koliko palet sprejme 20ft kontejner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "V 20ft kontejner pri STAR Containers gre 11 EUR palet (1.200 × 800 mm) ali 9–10 ISO palet (1.200 × 1.000 mm). Višina nakladanja 2,28 m."
+      },
+      "category": "dimenzije",
+      "slug": "palete-20ft"
+    },
+    {
+      "@type": "Question",
+      "name": "Koliko palet sprejme 40ft kontejner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "V 40ft kontejner pri STAR Containers gre 23–25 EUR palet (1.200 × 800 mm) ali 20–21 ISO palet (1.200 × 1.000 mm). Pri dvoetažnem nalaganju se kapaciteta podvoji."
+      },
+      "category": "dimenzije",
+      "slug": "palete-40ft"
+    },
+    {
+      "@type": "Question",
+      "name": "Koliko tehta 20ft kontejner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prazen 20ft kontejner pri STAR Containers tehta približno 2.230 kg (2,2 tone). Skupna masa z blagom je do 30.480 kg."
+      },
+      "category": "dimenzije",
+      "slug": "teza-20ft"
+    },
+    {
+      "@type": "Question",
+      "name": "Koliko tehta 40ft kontejner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prazen 40ft kontejner pri STAR Containers tehta cca. 3.750 kg (3,75 tone). Maksimalna skupna masa z blagom je 32.500 kg."
+      },
+      "category": "dimenzije",
+      "slug": "teza-40ft"
+    },
+    {
+      "@type": "Question",
+      "name": "Kakšna je notranja višina High Cube kontejnerja?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Notranja višina High Cube kontejnerja pri STAR Containers je 2,70 m. Standardni kontejner ima 2,39 m – razlika je 31 cm. Na voljo v Ptuju in Kopru."
+      },
+      "category": "high-cube",
+      "slug": "hc-visina"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali je High Cube dražji od standardnega kontejnerja?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "High Cube kontejner je pri STAR Containers za 300–500 € dražji od enako velikega standardnega kontejnerja. Glede na povečanje prostornine in funkcionalnosti je to ugodna naložba. Prevzem v Kopru cenejši."
+      },
+      "category": "high-cube",
+      "slug": "hc-cena"
+    },
+    {
+      "@type": "Question",
+      "name": "Kateri kontejner je boljši za container home – standard ali HC?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Za bivalni namen pri STAR Containers priporočamo High Cube kontejner. Višina 2,70 m je primerljiva s standardnim stropom v stanovanjih, kar naredi prostor udobnejši. Na voljo v Ptuju in Kopru."
+      },
+      "category": "high-cube",
+      "slug": "hc-container-home"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali High Cube kontejner ustreza za transport po železnici?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nekateri železniški profili imajo omejitve višine, ki preprečujejo transport HC kontejnerja. Na cestnih poteh in ladjah ni omejitev. STAR Containers svetuje pred naročilom."
+      },
+      "category": "high-cube",
+      "slug": "hc-zeleznica"
+    },
+    {
+      "@type": "Question",
+      "name": "Kje se High Cube kontejnerji najpogosteje uporabljajo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "High Cube kontejnerji pri STAR Containers so priljubljeni za skladiščenje visokih palet, kontejnerske pisarne, bivalne prostore, pop-up prodajalne in hrambo kmetijskih strojev. Na voljo v Ptuju in Kopru."
+      },
+      "category": "high-cube",
+      "slug": "hc-uporaba"
+    },
+    {
+      "@type": "Question",
+      "name": "Koliko stane hladilni (reefer) kontejner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "20ft hladilni kontejner pri STAR Containers stane od 6.990 €, 40ft HC hladilni od 9.900 € (brez DDV). Oba testirana v depoju Ptuj. Prevzem v Kopru je cenejši, kontejnerji prihajajo prek Luke Koper."
+      },
+      "category": "hladilni",
+      "slug": "cena-hladilni"
+    },
+    {
+      "@type": "Question",
+      "name": "Kakšen je temperaturni razpon hladilnega kontejnerja?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hladilni kontejnerji pri STAR Containers vzdržujejo temperaturo od -25°C do +25°C. Digitalni krmilnik omogoča natančno nastavitev. Testirani v depoju Ptuj pred dostavo."
+      },
+      "category": "hladilni",
+      "slug": "hladilni-temperatura"
+    },
+    {
+      "@type": "Question",
+      "name": "Koliko elektrike porabi hladilni kontejner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "20ft hladilni kontejner pri STAR Containers porabi 5–8 kW, 40ft pa 8–12 kW. Zahteva trifazni priključek 380V/50Hz. Možen je tudi dizelski generator."
+      },
+      "category": "hladilni",
+      "slug": "hladilni-poraba"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali hladilni kontejner deluje brez elektrike?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ne, brez električne energije hladilna enota ne deluje. Za neodvisno delovanje ponujamo dizelski generator. STAR Containers svetuje glede izbire. Prevzem v Ptuju ali Kopru."
+      },
+      "category": "hladilni",
+      "slug": "hladilni-brez-elektrike"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali rabljeni hladilni kontejner še deluje?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Da, vsak rabljeni hladilni kontejner pri STAR Containers pred prodajo testiramo na delovanje agregata in doseganje nastavljenih temperatur. Testiranje opravimo v depoju Ptuj."
+      },
+      "category": "hladilni",
+      "slug": "rabljeni-hladilni"
+    },
+    {
+      "@type": "Question",
+      "name": "Za katera blaga je primeren hladilni kontejner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hladilni kontejner pri STAR Containers je primeren za: meso in morsko hrano (0°C do +4°C), zamrznjene izdelke (-18°C do -25°C), sadje in zelenjavo, mlečne izdelke, farmacevtske izdelke in zdravila (+2°C do +8°C) ter kozmetiko. Uvoženi prek Luke Koper."
+      },
+      "category": "hladilni",
+      "slug": "hladilni-blago"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali je kontejner za skladiščenje vodotesen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Da, vsi kontejnerji za skladiščenje pri STAR Containers so vodotesni. Jeklena konstrukcija, tesnila na vratih in antikorozijski premaz zagotavljajo zaščito pred dežjem, snegom in vlago. Preverite v Ptuju ali Kopru."
+      },
+      "category": "skladiscenje",
+      "slug": "skladiscenje-vodotesnost"
+    },
+    {
+      "@type": "Question",
+      "name": "Koliko časa traja postavitev kontejnerja?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dostava in postavitev kontejnerja pri STAR Containers traja manj kot eno uro. Kamion s klikalko postavi kontejner na željeno lokacijo brez dodatnih strojev. Depo v Ptuju, prevzem v Kopru."
+      },
+      "category": "skladiscenje",
+      "slug": "cas-postavitve"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali potrebujem elektriko v skladiščnem kontejnerju?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Za osnovno skladiščenje elektrika ni potrebna. Za osvetlitev, varnostne kamere ali hladilno enoto pa je priporočljiv priklop. STAR Containers ponuja električno instalacijo po meri v depoju Ptuj."
+      },
+      "category": "skladiscenje",
+      "slug": "skladiscenje-elektrika"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali je kontejner protivlomno zaščiten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Da, vsi kontejnerji pri STAR Containers so opremljeni z ojačenimi zakoni. Po želji namestimo dodatne ključavnice ali varnostne sisteme. Prevzem v Ptuju ali Kopru."
+      },
+      "category": "skladiscenje",
+      "slug": "skladiscenje-varnost"
+    },
+    {
+      "@type": "Question",
+      "name": "Kaj lahko shranim v kontejnerju?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "V kontejnerju STAR Containers lahko varno shranite: gradbeno orodje, kmetijsko mehanizacijo, pohištvo, sezonske predmete, arhivska gradiva, e-commerce zaloge, avtomobile in športno opremo. Na voljo v Ptuju in Kopru."
+      },
+      "category": "skladiscenje",
+      "slug": "skladiscenje-predmeti"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali potrebujem gradbeno dovoljenje za postavitev kontejnerja?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Za začasno postavitev kontejnerja (do 12 mesecev) praviloma ni treba pridobiti gradbenega dovoljenja. STAR Containers svetuje pri vseh postopkih. Prevzem v Ptuju ali Kopru."
+      },
+      "category": "skladiscenje",
+      "slug": "skladiscenje-dovoljenje"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali za kontejner na gradbišču potrebujem dovoljenje?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Za začasno postavitev (do 12 mesecev) kontejner na gradbišču praviloma ne potrebuje gradbenega dovoljenja. STAR Containers svetuje, da preverite pri lokalni občini. Depo v Ptuju."
+      },
+      "category": "gradbisca",
+      "slug": "gradbisce-dovoljenje"
+    },
+    {
+      "@type": "Question",
+      "name": "Kako hitro lahko premestim kontejner na novo gradbišče?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kontejner STAR Containers je mogoče premestiti v 30–60 minutah z našim kamionom s klikalko. Depo v Ptuju in Kopru omogočata hitro premestitev po vsej Sloveniji."
+      },
+      "category": "gradbisca",
+      "slug": "gradbisce-premestitev"
+    },
+    {
+      "@type": "Question",
+      "name": "Koliko orodja sprejme 20ft kontejner na gradbišču?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "20ft kontejner pri STAR Containers s prostornino 33 m³ zadostuje za vso opremo povprečne gradbiščne ekipe. Za večja gradbišča priporočamo 40ft kontejner. Na voljo v Ptuju in Kopru."
+      },
+      "category": "gradbisca",
+      "slug": "gradbisce-kapaciteta"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali ponujate najem kontejnerjev za gradbišče?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Poleg prodaje se pri STAR Containers dogovorimo tudi za najem kontejnerja za gradbišče. Kontaktirajte nas za ponudbo. Prevzem v Kopru cenejši, dostava iz Ptuja."
+      },
+      "category": "gradbisca",
+      "slug": "gradbisce-najem"
+    },
+    {
+      "@type": "Question",
+      "name": "Katere prilagoditve kontejnerja ponujate za gradbišče?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pri STAR Containers kontejner za gradbišče opremimo z: dvojnimi vrati, mrežastimi okni, električno instalacijo, notranjimi policami, zunanjim stopniščem in protivlomnimi zaklepi. Lakiranje po RAL barvi. Depo Ptuj."
+      },
+      "category": "gradbisca",
+      "slug": "gradbisce-prilagoditve"
+    },
+    {
+      "@type": "Question",
+      "name": "Kakšne prilagoditve kontejnerja ponujate po meri?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "STAR Containers ponuja: dodajanje oken in vrat, električne instalacije, izolacijo, prezračevanje, barvo po RAL vzorčniku, protivlomne sisteme in notranje police. Vse prilagoditve izvedemo v depoju Ptuj."
+      },
+      "category": "adaptacije",
+      "slug": "prilagoditve-po-meri"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali lahko kontejner predelam v bivalni prostor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Da, kontejner STAR Containers je mogoče prilagoditi v bivalni prostor (container home). Priporočamo High Cube kontejner (višina 2,70 m). Potrebni so izolacija, električna instalacija in okna. Depo Ptuj."
+      },
+      "category": "adaptacije",
+      "slug": "kontejner-bivanje"
+    },
+    {
+      "@type": "Question",
+      "name": "V katere barve lahko dobim kontejner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kontejnerje STAR Containers lahko naročite v poljubni barvi po RAL vzorčniku. To velja tako za nove kot rabljene kontejnerje. Barvanje izvedemo v depoju Ptuj."
+      },
+      "category": "adaptacije",
+      "slug": "barve-kontejnerja"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali kontejner potrebuje temelje?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Za začasno postavitev kontejnerja STAR Containers ne potrebuje posebnih temeljev. Priporočamo ravno, čvrsto podlago (beton, asfalt, gramoz). Za trajno postavitev priporočamo betonsko ploščo ali podporne stebre."
+      },
+      "category": "dimenzije",
+      "slug": "kontejner-temelji"
+    },
+    {
+      "@type": "Question",
+      "name": "Kako dolgo traja ladijski kontejner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kakovosten nov ladijski kontejner pri STAR Containers traja 20–25 let ali več ob minimalnem vzdrževanju. Redno pregledovanje in antikorozijski premaz podaljšata življenjsko dobo. Na voljo v Ptuju in Kopru."
+      },
+      "category": "dimenzije",
+      "slug": "zivljenjska-doba"
+    },
+    {
+      "@type": "Question",
+      "name": "Kaj je ladijski kontejner (ISO kontejner)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ladijski kontejner (ISO kontejner) je standardizirana kovinska enota za transport in skladiščenje blaga. Izdelan iz visokokakovostnega jekla, vodoodporen in opremljen z varnimi zaklepi. STAR Containers, depo Ptuj in Koper."
+      },
+      "category": "splosno",
+      "slug": "kaj-je-ladijski-kontejner"
+    },
+    {
+      "@type": "Question",
+      "name": "Katere vrste ladijskih kontejnerjev ponujate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "STAR Containers ponuja: standardne (General Purpose), High Cube, hladilne (Reefer), Open Top in Flat Rack kontejnerje. Velikosti 10ft, 20ft in 40ft. V dimenzijah za transport in skladiščenje. Depo Ptuj in Koper."
+      },
+      "category": "splosno",
+      "slug": "vrste-kontejnerjev"
+    },
+    {
+      "@type": "Question",
+      "name": "Kje se nahajajo depoji STAR Containers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "STAR Containers ima dva depoja: Ptuj (Puhova ulica 12a, 2250 Ptuj) – glavni depo s 48h dostavo po Sloveniji, in Koper – depo v pristanišču, kjer je prevzem cenejši, saj kontejnerji prihajajo direktno z ladij prek Luke Koper."
+      },
+      "category": "splosno",
+      "slug": "depoji"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali lahko kontejner osebno prevzamem v Kopru ali Ptuju?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Da, pri STAR Containers je možen osebni prevzem v obeh depojih – Ptuj in Koper. Prevzem v Kopru je cenejši, saj kontejnerji prihajajo direktno z ladij. Depo v Ptuju prav tako omogoča takojšen prevzem."
+      },
+      "category": "splosno",
+      "slug": "osebni-prevzem"
+    },
+    {
+      "@type": "Question",
+      "name": "Kako dolgo traja, da kontejner prispe iz Hongkonga v Koper?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kontejnerji STAR Containers iz Hongkonga prispejo v Luko Koper v približno 4–6 tednih. Iz Kopra so nato na voljo za prevzem po ugodnejši ceni ali se prepeljejo v depo Ptuj za dostavo po Sloveniji."
+      },
+      "category": "dostava",
+      "slug": "hongkong-koper"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali ponujate kontejnerje za kmetijstvo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Da, STAR Containers ponuja kontejnerje za kmetijstvo: skladiščenje pridelkov, hramba kmetijske mehanizacije, orodja in opreme. Na voljo v Ptuju in Kopru z dostavo po Sloveniji."
+      },
+      "category": "skladiscenje",
+      "slug": "kmetijstvo"
+    },
+    {
+      "@type": "Question",
+      "name": "Ali imate kontejnerje na zalogi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Da, STAR Containers ima kontejnerje vedno na zalogi v depojih Ptuj in Koper. Na voljo so novi in rabljeni kontejnerji vseh velikosti. Dostava v 48h po Sloveniji."
+      },
+      "category": "splosno",
+      "slug": "zaloga"
+    }
+  ]
+}
