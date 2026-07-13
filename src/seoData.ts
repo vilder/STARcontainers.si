@@ -267,7 +267,7 @@ STAR Containers ponuja vse velikosti skladiščnih kontejnerjev – od kompaktni
     h1: 'Kontejner za gradbišče – Zanesljiva mobilna skladišča in servisne enote',
     description: 'Kontejnerji za gradbišča: skladiščenje materialov, orodjarne, servisne enote. Hitra dostava, prilagoditve po meri. Od 1.790 € (brez DDV).',
     keywords: ['kontejner za gradbišče', 'gradbiščni kontejner', 'kontejner gradbeništvo', 'servisni kontejner', 'kontejner za orodje', 'kontejner na gradbišču'],
-    image: '/photos/20ft-a1.jpg',
+    image: '/photos/20ft-a1.webp',
     content: `Kontejnerji na gradbiščih so nepogrešljivi za varno in urejeno delo na vsaki lokaciji. Ladijski kontejner je idealna rešitev za varno hrambo gradbene opreme, materialov in orodja ter za ureditev servisnih prostorov, delavnic ali pisarn neposredno na gradbišču.
 
 Prednost kontejnerja pred klasičnimi gradbiščnimi barako je njegova robustnost, vodotesnost in enostavna premestitev. Ko je delo na eni lokaciji končano, je kontejner v 30 minutah na tovornjaku in pripravljen za prevoz na naslednjo lokacijo.
@@ -300,7 +300,7 @@ STAR Containers ponuja kontejnerje za gradbišča v vseh velikostih. Prilagodimo
     h1: 'Rabljeni kontejnerji – Kakovostne rabljene enote po ugodnih cenah',
     description: 'Rabljeni ladijski kontejnerji v odličnem stanju. Pregledani, certificirani, vodoodporni. Cene od 1.490 €. Dostava po Sloveniji.',
     keywords: ['rabljeni kontejnerji', 'rabljen kontejner', 'kontejnerji rabljeni', 'poceni kontejner', 'rabljeni ladijski kontejner', 'drugi kontejnerji'],
-    image: '/photos/rabljen-20ft-main.jpg',
+    image: '/photos/rabljen-20ft-main.webp',
     content: `Rabljeni kontejnerji so odlična ekonomična izbira za tiste, ki iščejo kakovostno rešitev za skladiščenje ali transport po ugodnejši ceni. Pri STAR Containers so vsi rabljeni kontejnerji temeljito pregledani, funkcionalno brezhibni in pripravljeni za takojšnjo uporabo.
 
 Rabljeni kontejnerji izvirajo iz aktivne ladijske flote – so bili večkrat prepeljani po morju in so zato zasnovani za ekstremne razmere. To pomeni, da so kljub starosti strukturno trdni, vodotesni in varni. Naši strokovnjaki vsak rabljeni kontejner pregledajo na vodotesnost, stanje tal, tesnila na vratih in celovitost jeklene konstrukcije.
@@ -432,7 +432,7 @@ ISO oznaka High Cube kontejnerja je 45G1 (40ft HC) ali 25G1 (20ft HC). Zunanja v
     h1: 'Hladilni kontejner – Kontrolirana temperatura od -25°C do +25°C',
     description: 'Hladilni (reefer) kontejnerji za transport in skladiščenje pri kontrolirani temperaturi. -25°C do +25°C. Cena od 6.990 € (brez DDV). Dostava po Sloveniji.',
     keywords: ['hladilni kontejner', 'reefer kontejner', 'kontejner hlajenje', 'hladilni kontejner cena', 'refrigerated kontejner', 'kontejner za hlajenje', 'kontejner zamrzovalnik'],
-    image: '/photos/reefer-3.jpg',
+    image: '/photos/reefer-3.webp',
     content: `Hladilni kontejnerji (reefer kontejnerji) so posebna kategorija ladijskih kontejnerjev z integriranim hladilnim agregatom, ki vzdržuje konstantno temperaturo od -25°C do +25°C. Primarno so namenjeni transportu in skladiščenju živil, farmacevtskih izdelkov, kemikalij in vseh temperaturno občutljivih materialov.
 
 Hladilni kontejner je opremljen z digitalnim krmilnikom temperature, notranjimi T-vodili za kroženje zraka in izoliranimi stenami, streho in tlemi. Hladilna enota je nameščena na sprednji strani kontejnerja (nasprotno od vrat) in zahteva zunanji vir električne energije (380V/50Hz).
@@ -465,7 +465,7 @@ STAR Containers ponuja 20ft hladilni kontejner (28 m³) in 40ft HC hladilni kont
     h1: 'Dostava kontejnerjev – Po vsej Sloveniji v 48 urah',
     description: 'Dostava ladijskih kontejnerjev po vsej Sloveniji. Rok 48 ur. Dostava s kamionom s klikalko. Brezplačen nasvet za pripravo terena. STAR Containers.',
     keywords: ['kontejner dostava', 'dostava kontejnerja', 'kontejner dostava cena', 'prevoz kontejnerja', 'dostava kontejnerjev Slovenija', 'kamion za kontejner'],
-    image: '/photos/dostava-1.jpg',
+    image: '/photos/dostava-1.webp',
     content: `STAR Containers zagotavlja dostavo ladijskih kontejnerjev po vsej Sloveniji in sosednjih državah (Avstrija, Hrvaška, Italija) v roku 48 ur od potrditve naročila. Dostavo izvajamo z lastnimi specializiranimi vozili – kamioni s klikalko (hook lift) ali s polpriklopniki s strani odprtim nakladanjem, ki omogočajo natančno postavljanje kontejnerja na željeno lokacijo.
 
 Naš depo se nahaja v Ptuju, kar je strateška lokacija v osrednjem delu Slovenije z odličnimi avtocestnimi povezavami v vse smeri. Od Ptuja do Ljubljane je 130 km, do Maribora 25 km, do Celja 70 km, do Kopra 220 km.

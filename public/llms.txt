@@ -1,0 +1,58 @@
+# STAR Containers
+
+> STAR Containers (starcontainers.si) je slovenski dobavitelj novih in rabljenih ISO ladijskih kontejnerjev za skladiščenje, gradbišča in transport. Glavni depo v Ptuju, drugi depo v Kopru (Luka Koper). Dostava po Sloveniji v 48h, pokrivamo tudi Avstrijo, Hrvaško in Italijo.
+
+STAR Containers prodaja nove in rabljene ISO ladijske kontejnerje v velikostih 10ft (14 m³), 20ft (33 m³) in 40ft (67 m³), vključno s Standard, High Cube (+30 cm višine) in hladilnimi (reefer, -25°C do +25°C). Vsi kontejnerji so ISO certificirani in pregledani pred dostavo. Kontejnerje uvozijo direktno iz Hongkonga prek Luke Koper. Prevzem v Kopru je cenejši, saj kontejnerji prihajajo direktno z ladij. Naslov podjetja: Puhova ulica 12a, 2250 Ptuj, Slovenija.
+
+## Izdelki
+
+- [10ft Standard kontejner](https://www.starcontainers.si/kontejner-cena): 14 m³, 1.790 €, idealen za manjše prostore
+- [20ft Standard kontejner](https://www.starcontainers.si/kontejner-20ft): 33 m³, od 1.990 €, sprejme 11 EUR palet
+- [40ft Standard kontejner](https://www.starcontainers.si/kontejner-40ft): 67 m³, od 2.700 €, sprejme 25 EUR palet
+- [20ft High Cube kontejner](https://www.starcontainers.si/high-cube-kontejner): 37 m³, višina 2,70 m, od 2.490 €
+- [40ft High Cube kontejner](https://www.starcontainers.si/high-cube-kontejner): 76 m³, višina 2,70 m, od 2.790 €
+- [20ft Hladilni kontejner](https://www.starcontainers.si/hladilni-kontejner): 28 m³, -25°C do +25°C, od 6.990 €
+- [40ft HC Hladilni kontejner](https://www.starcontainers.si/hladilni-kontejner): 67 m³, -25°C do +25°C, od 9.900 €
+- [Rabljeni 20ft kontejner](https://www.starcontainers.si/rabljeni-kontejnerji): od 1.490 €, kategorije A/B/C
+- [Rabljeni 40ft HC kontejner](https://www.starcontainers.si/rabljeni-kontejnerji): od 2.190 €, 40 % ceneje od novega
+
+## Dokumentacija
+
+- [Cene kontejnerjev](https://www.starcontainers.si/kontejner-cena): Celoten cenik vseh tipov kontejnerjev s pogostimi vprašanji
+- [Vodnik po ladijskih kontejnerjih](https://www.starcontainers.si/ladijski-kontejner): Vrste, dimenzije, teže in uporaba ISO kontejnerjev
+- [Skladiščni kontejnerji](https://www.starcontainers.si/kontejner-za-skladiscenje): Vodotesne rešitve za skladiščenje za podjetja in zasebnike
+- [Skladiščni kontejner — vstopna stran](https://www.starcontainers.si/skladiscni-kontejner): Namenska stran s cenami in primerjavo
+- [Gradbiščni kontejnerji](https://www.starcontainers.si/kontejner-za-gradbiscite): Mobilna skladišča, orodjarne in servisne enote za gradbišča
+- [Rabljeni kontejnerji](https://www.starcontainers.si/rabljeni-kontejnerji): Kategorije A/B/C, postopek pregleda, cene
+- [20ft kontejner — specifikacije](https://www.starcontainers.si/kontejner-20ft): Dimenzije, kapaciteta palet, teža, TEU
+- [40ft kontejner — specifikacije](https://www.starcontainers.si/kontejner-40ft): Dimenzije, kapaciteta palet, teža, FEU
+- [High Cube kontejnerji](https://www.starcontainers.si/high-cube-kontejner): Dodatna višina (+30 cm), uporaba za container home
+- [Hladilni kontejnerji](https://www.starcontainers.si/hladilni-kontejner): Reefer kontejnerji za hrano, farmacijo in kemikalije
+- [Dostava kontejnerjev](https://www.starcontainers.si/kontejner-dostava): 48h dostava, zahteve za kamion, mednarodna dostava
+- [FAQ podatki za AI](https://www.starcontainers.si/faq-data.json): Strukturiranih 60+ Q&A parov o cenah, dostavi in dimenzijah
+
+## Mesta
+
+- [Kontejner Ljubljana](https://www.starcontainers.si/kontejner/ljubljana): Osrednjeslovenska regija, 295k prebivalcev
+- [Kontejner Maribor](https://www.starcontainers.si/kontejner/maribor): Drugo največje mesto, Štajerska, blizu depoja Ptuj
+- [Kontejner Koper](https://www.starcontainers.si/kontejner/koper): Pristaniško mesto, drugi depo, cenejši prevzem
+- [Kontejner Ptuj](https://www.starcontainers.si/kontejner/ptuj): Glavni depo, sedež podjetja (Puhova ulica 12a)
+- [Kontejner Celje](https://www.starcontainers.si/kontejner/celje): Savinjska regija, tretje največje mesto
+- [Kontejner Kranj](https://www.starcontainers.si/kontejner/kranj): Gorenjska regija, blizu Ljubljane
+
+## Podjetje
+
+- [Domov](https://www.starcontainers.si/): Celoten katalog izdelkov, RAL barve, mnenja strank, kontaktni obrazec
+- [Zemljevid strani](https://www.starcontainers.si/sitemap): Popoln seznam vseh 29 strani
+
+## Optional
+
+- [Kontejner Nova Gorica](https://www.starcontainers.si/kontejner/nova-gorica): Zahodna Slovenija, ob italijanski meji
+- [Kontejner Novo Mesto](https://www.starcontainers.si/kontejner/novo-mesto): Dolenjska, jugovzhodna Slovenija
+- [Kontejner Murska Sobota](https://www.starcontainers.si/kontejner/murska-sobota): Prekmurje, severovzhod Slovenije
+- [Kontejner Brežice](https://www.starcontainers.si/kontejner/brezice): Posavje, ob hrvaški meji
+- [Kontejner Velenje](https://www.starcontainers.si/kontejner/velenje): Savinjska, industrijska regija
+- [Kontejner Trbovlje](https://www.starcontainers.si/kontejner/trbovlje): Zasavje, industrijsko območje
+- [Kontejner Izola](https://www.starcontainers.si/kontejner/izola): Obalno mesto, blizu Luke Koper
+- [Kontejner Slovenska Bistrica](https://www.starcontainers.si/kontejner/slovenska-bistrica): Štajerska, med Mariborom in Celjem
+- [Kontejner Domžale](https://www.starcontainers.si/kontejner/domzale): Blizu Ljubljane, industrijsko predmestje
