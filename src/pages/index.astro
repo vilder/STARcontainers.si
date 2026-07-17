@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { containerTypes } from '../seoData';
 import ContainerFilter from '../components/ContainerFilter';
 import ContactForm from '../components/ContactForm';
 import {
@@ -75,7 +76,8 @@ const testimonials = [
   },
 ];
 
-const schema = JSON.stringify({
+const priceValues = containerTypes.map(ct => parseFloat(ct.price.replace(/\./g, '')));
+const schema = JSON.stringify([{
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "Organization"],
   "name": "STAR Containers",
@@ -97,7 +99,21 @@ const schema = JSON.stringify({
   "sameAs": [
     "https://www.facebook.com/profile.php?id=61590607888405"
   ]
-});
+}, {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Ladijski kontejnerji",
+  "description": "Širok nabor ladijskih kontejnerjev za prodajo v Sloveniji",
+  "brand": { "@type": "Brand", "name": "STAR Containers" },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "EUR",
+    "lowPrice": Math.min(...priceValues),
+    "highPrice": Math.max(...priceValues),
+    "offerCount": containerTypes.length,
+    "availability": "https://schema.org/InStock"
+  }
+}]);
 ---
 
 <Layout
@@ -374,6 +390,71 @@ const schema = JSON.stringify({
             <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">{feature.desc}</p>
           </div>
         ))}
+      </div>
+    </div>
+  </section>
+
+  {/* STORAGE CONTAINERS */}
+  <section class="py-24 bg-white dark:bg-navy-950 border-b border-gray-100 dark:border-navy-700/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <div class="scroll-animate opacity-0" data-anim="animate-fade-in-up">
+          <span class="inline-block text-orange-500 font-semibold text-sm tracking-widest uppercase mb-4">
+            Skladiščni kontejnerji
+          </span>
+          <h2 class="text-4xl lg:text-5xl font-black leading-tight mb-6">
+            Skladiščni kontejnerji za <span class="text-orange-500">suho in varno shranjevanje</span>
+          </h2>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+            Ladijski kontejnerji so ena najboljših rešitev za varno in suho shranjevanje blaga,
+            opreme in materialov. Jeklena konstrukcija ščiti pred dežjem, snegom, vlago in vlomi –
+            brez potrebe po gradbenem dovoljenju za začasno postavitev.
+          </p>
+          <div class="space-y-4 mb-8">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-orange-100 dark:bg-orange-950/40 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Package class="w-5 h-5 text-orange-500" />
+              </div>
+              <div>
+                <h3 class="font-bold mb-0.5">Vodotesni ISO certifikat</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Vsak kontejner je pred dostavo pregledan na vodotesnost in ima certifikat ISO.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-orange-100 dark:bg-orange-950/40 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Shield class="w-5 h-5 text-orange-500" />
+              </div>
+              <div>
+                <h3 class="font-bold mb-0.5">Protivlomna zaščita</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Ojačeni jekleni zaklopi in možnost montaže dodatnih varnostnih sistemov.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-orange-100 dark:bg-orange-950/40 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Clock class="w-5 h-5 text-orange-500" />
+              </div>
+              <div>
+                <h3 class="font-bold mb-0.5">Takoj na voljo – dostava v 48h</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Kontejnerji so na zalogi v Ptuju in Kopru. Dostava po Sloveniji v 48 urah.</p>
+              </div>
+            </div>
+          </div>
+          <a
+            href="/skladiscni-kontejner"
+            class="group inline-flex items-center gap-2.5 bg-orange-500 hover:bg-orange-600 text-white font-bold px-7 py-3.5 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/25 hover:-translate-y-0.5"
+          >
+            Več o skladiščnih kontejnerjih
+            <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </a>
+        </div>
+        <div class="scroll-animate opacity-0" data-anim="animate-fade-in">
+          <img
+            src="/photos/20ft-4.webp"
+            alt="Skladiščni kontejner"
+            class="rounded-3xl shadow-2xl w-full object-cover aspect-[4/3]"
+            loading="lazy"
+          />
+        </div>
       </div>
     </div>
   </section>

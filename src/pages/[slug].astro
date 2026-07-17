@@ -51,7 +51,24 @@ const breadcrumbSchema = {
   ]
 };
 
-const combinedSchema = JSON.stringify([articleSchema, faqSchema, breadcrumbSchema]);
+const priceValues = containerTypes.map(ct => parseFloat(ct.price.replace(/\./g, '')));
+const productSchema = (kw.slug === 'kontejner-cena' || kw.slug === 'ladijski-kontejner') ? {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Ladijski kontejnerji",
+  "description": "Cenik ladijskih kontejnerjev v Sloveniji",
+  "brand": { "@type": "Brand", "name": "STAR Containers" },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "EUR",
+    "lowPrice": Math.min(...priceValues),
+    "highPrice": Math.max(...priceValues),
+    "offerCount": containerTypes.length,
+    "availability": "https://schema.org/InStock"
+  }
+} : null;
+
+const combinedSchema = JSON.stringify([articleSchema, faqSchema, breadcrumbSchema, productSchema].filter(Boolean));
 ---
 
 <Layout

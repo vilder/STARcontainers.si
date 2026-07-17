@@ -382,10 +382,10 @@
     },
     {
       "@type": "Question",
-      "name": "Ali je kontejner za skladiščenje vodotesen?",
+      "name": "Ali je kontejner za shranjevanje vodotesen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Da, vsi kontejnerji za skladiščenje pri STAR Containers so vodotesni. Jeklena konstrukcija, tesnila na vratih in antikorozijski premaz zagotavljajo zaščito pred dežjem, snegom in vlago. Preverite v Ptuju ali Kopru."
+        "text": "Da, vsi kontejnerji za shranjevanje pri STAR Containers so vodotesni. Jeklena konstrukcija, tesnila na vratih in antikorozijski premaz zagotavljajo zaščito pred dežjem, snegom in vlago. Preverite v Ptuju ali Kopru."
       },
       "category": "skladiscenje",
       "slug": "skladiscenje-vodotesnost"
@@ -405,7 +405,7 @@
       "name": "Ali potrebujem elektriko v skladiščnem kontejnerju?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Za osnovno skladiščenje elektrika ni potrebna. Za osvetlitev, varnostne kamere ali hladilno enoto pa je priporočljiv priklop. STAR Containers ponuja električno instalacijo po meri v depoju Ptuj."
+        "text": "Za osnovno shranjevanje elektrika ni potrebna. Za osvetlitev, varnostne kamere ali hladilno enoto pa je priporočljiv priklop. STAR Containers ponuja električno instalacijo po meri v depoju Ptuj."
       },
       "category": "skladiscenje",
       "slug": "skladiscenje-elektrika"

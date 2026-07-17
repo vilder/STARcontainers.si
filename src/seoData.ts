@@ -225,28 +225,28 @@ Vsak kontejner je pred dobavo pregledan, opremljen z dokumentacijo in certifikat
     ],
   },
   {
-    slug: 'kontejner-za-skladiscenje',
-    title: 'Kontejner za skladiščenje – Varno in suho shranjevanje | STAR Containers',
-    h1: 'Kontejner za skladiščenje – Varno in suho skladiščenje brez kompromisov',
-    description: 'Ladijski kontejnerji kot idealna rešitev za skladiščenje. Vodoodporni, varni, certificirani. Dostava po Sloveniji v 48h. Od 1.790 € (brez DDV).',
-    keywords: ['kontejner za skladiščenje', 'skladiščni kontejner', 'kontejner shramba', 'kontejner za shranjevanje', 'skladiščenje v kontejnerju', 'kontejner garaža'],
+    slug: 'kontejner-za-shranjevanje',
+    title: 'Kontejner za shranjevanje – Varno in suho skladiščenje | STAR Containers',
+    h1: 'Kontejner za shranjevanje – Varno in suho brez kompromisov',
+    description: 'Ladijski kontejnerji kot idealna rešitev za shranjevanje. Vodoodporni, varni, certificirani. Dostava po Sloveniji v 48h. Od 1.790 € (brez DDV).',
+    keywords: ['kontejner za shranjevanje', 'skladiščni kontejner', 'kontejner shramba', 'shranjevanje v kontejnerju', 'kontejner garaža'],
     image: '/photos/20ft-4.webp',
-    content: `Ladijski kontejnerji so ena najboljših rešitev za varno in suho skladiščenje blaga, opreme, orodja in materialov. Njihova jeklena konstrukcija ščiti vsebino pred dežjem, snegom, vlago, mrazom in potencialnimi vlomilci. Za razliko od klasičnih skladiščnih objektov kontejner ne zahteva gradbenega dovoljenja za začasno rabo in ga ni treba graditi – je takoj na voljo in takoj funkcionalen.
+    content: `Ladijski kontejnerji so ena najboljših rešitev za varno in suho shranjevanje blaga, opreme, orodja in materialov. Njihova jeklena konstrukcija ščiti vsebino pred dežjem, snegom, vlago, mrazom in potencialnimi vlomilci. Za razliko od klasičnih skladiščnih objektov kontejner ne zahteva gradbenega dovoljenja za začasno rabo in ga ni treba graditi – je takoj na voljo in takoj funkcionalen.
 
-Kontejner za skladiščenje je primeren za najrazličnejše namene: od shranjevanja gradbene opreme na gradbišču, kmetijskega orodja in strojev, pa do osebnih predmetov, pohištva, arhivov ali zalog za e-commerce podjetja.
+Kontejner za shranjevanje je primeren za najrazličnejše namene: od shranjevanja gradbene opreme na gradbišču, kmetijskega orodja in strojev, pa do osebnih predmetov, pohištva, arhivov ali zalog za e-commerce podjetja.
 
 STAR Containers ponuja vse velikosti skladiščnih kontejnerjev – od kompaktnih 10ft za omejene površine do 40ft High Cube kontejnerjev za obsežne potrebe. Vsak kontejner je vodoodporen, protipožaren in ima kakovostne protivlomne zapone.`,
     sections: [
       {
-        title: 'Zakaj je kontejner idealen za skladiščenje?',
-        body: 'Ladijski kontejner je zasnovan za transport po morju, kjer je izpostavljen ekstremnim vremenskim razmeram – slani vodi, vlagi in temperaturnim nihanjem. Prav ta robustnost ga naredi idealnega za dolgoročno skladiščenje na kopnem. Jeklena konstrukcija ščiti vsebino pred vlago in vlomi. Notranje ploščice tal so narejene iz trdnega lesa ali bambuša, ki vzdržita težka bremena. Standardni kontejner prenese do 25.000 kg koristnega tovora.',
+        title: 'Zakaj je kontejner idealen za shranjevanje?',
+        body: 'Ladijski kontejner je zasnovan za transport po morju, kjer je izpostavljen ekstremnim vremenskim razmeram – slani vodi, vlagi in temperaturnim nihanjem. Prav ta robustnost ga naredi idealnega za dolgoročno shranjevanje na kopnem. Jeklena konstrukcija ščiti vsebino pred vlago in vlomi. Notranje ploščice tal so narejene iz trdnega lesa ali bambuša, ki vzdržita težka bremena. Standardni kontejner prenese do 25.000 kg koristnega tovora.',
       },
       {
         title: 'Katere predmete je mogoče shraniti v kontejnerju?',
         body: 'V kontejnerju je mogoče varno shraniti praktično vse: gradbeno orodje in stroje, kmetijsko mehanizacijo, pohištvo in opremo za dom, sezonske predmete (blagajniška oprema, božična dekoracija), arhivska gradiva podjetij, blago za e-commerce (zaloge, embalaža), avtomobile ali motorje, športno opremo in rekreacijske pripomočke ter industrijske komponente in rezervne dele.',
       },
       {
-        title: 'Katere velikosti so na voljo za skladiščenje?',
+        title: 'Katere velikosti so na voljo za shranjevanje?',
         body: '10ft kontejner (14 m³) je primeren za manjša gradbišča ali zasebno rabo. 20ft kontejner (33 m³) je najpogostejša izbira za podjetja in kmetije – sprejme do 11 EUR palet. 40ft kontejner (67 m³) je idealen za velika podjetja ali obsežne projekte. 40ft High Cube (76 m³) ponuja dodatno notranjo višino 2,70 m, kar omogoča shranjevanje višjih predmetov ali dvonivojsko polično postavitev.',
       },
       {
@@ -255,9 +255,9 @@ STAR Containers ponuja vse velikosti skladiščnih kontejnerjev – od kompaktni
       },
     ],
     faq: [
-      { q: 'Ali je kontejner za skladiščenje vodotesen?', a: 'Da, vsi naši kontejnerji so vodotesni. Jeklena konstrukcija, tesnila na vratih in vodoodporen premaz zagotavljajo zaščito pred dežjem, snegom in vlago.' },
+      { q: 'Ali je kontejner za shranjevanje vodotesen?', a: 'Da, vsi naši kontejnerji so vodotesni. Jeklena konstrukcija, tesnila na vratih in vodoodporen premaz zagotavljajo zaščito pred dežjem, snegom in vlago.' },
       { q: 'Koliko časa traja postavitev kontejnerja?', a: 'Dostava in postavitev kontejnerja trajata manj kot eno uro. Kamion s posebno napravo (klikalka) kontejner postavi na željeno lokacijo brez dodatnih strojev.' },
-      { q: 'Ali potrebujem elektriko v kontejnerju?', a: 'Za osnovno skladiščenje elektrika ni potrebna. Za osvetlitev, varnostne kamere ali hladilno enoto pa je priporočljiv priklop. Ponujamo tudi električno instalacijo po meri.' },
+      { q: 'Ali potrebujem elektriko v kontejnerju?', a: 'Za osnovno shranjevanje elektrika ni potrebna. Za osvetlitev, varnostne kamere ali hladilno enoto pa je priporočljiv priklop. Ponujamo tudi električno instalacijo po meri.' },
       { q: 'Ali je kontejner protivlomno zaščiten?', a: 'Da, vsi kontejnerji so opremljeni z zaposrnimi ojačenimi zakoni. Po želji je mogoče namestiti dodatne ključavnice ali varnostne sisteme.' },
     ],
   },

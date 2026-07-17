@@ -48,7 +48,24 @@ const breadcrumbSchema = {
   ]
 };
 
-const combinedSchema = JSON.stringify([schema, breadcrumbSchema]);
+const cityFaq = [
+  { q: `Kako hitro lahko dostavite kontejner v ${city.name}?`, a: `Dostava kontejnerja v ${city.name} je običajno v roku 48 ur od potrditve naročila. Za nujne primere nudimo hitro dostavo v 24 urah, kadar je kontejner na zalogi.` },
+  { q: `Katere velikosti kontejnerjev imate na zalogi za ${city.name}?`, a: `Na zalogi imamo 10ft, 20ft, 40ft standardne kontejnerje, High Cube (HC) različice in hladilne kontejnerje. Vse velikosti so takoj dostopne za dostavo v ${city.name}.` },
+  { q: `Ali potrebujem gradbeno dovoljenje za postavitev kontejnerja v ${city.name}?`, a: `Za začasno postavitev kontejnerja (do 12 mesecev) običajno ni potrebno gradbeno dovoljenje. Priporočamo, da preverite lokalne predpise v občini ${city.name}.` },
+  { q: `Kakšna je cena dostave kontejnerja v ${city.name}?`, a: `Cena dostave je vključena v končno ponudbo in se razlikuje glede na lokacijo in velikost kontejnerja. Kontaktirajte nas za točno ponudbo za ${city.name}.` },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": cityFaq.map(f => ({
+    "@type": "Question",
+    "name": f.q,
+    "acceptedAnswer": { "@type": "Answer", "text": f.a }
+  }))
+};
+
+const combinedSchema = JSON.stringify([schema, breadcrumbSchema, faqSchema]);
 ---
 
 <Layout
@@ -226,9 +243,9 @@ const combinedSchema = JSON.stringify([schema, breadcrumbSchema]);
                 <ChevronRight class="w-3 h-3 text-orange-500" />
                 Ladijski kontejner
               </a>
-              <a href="/kontejner-za-skladiscenje" class="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-orange-500 transition-colors py-1">
+              <a href="/kontejner-za-shranjevanje" class="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 hover:text-orange-500 transition-colors py-1">
                 <ChevronRight class="w-3 h-3 text-orange-500" />
-                Kontejner za skladiščenje
+                Kontejner za shranjevanje
               </a>
             </div>
           </div>
