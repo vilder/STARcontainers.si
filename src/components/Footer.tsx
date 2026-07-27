@@ -79,7 +79,7 @@ export default function Footer() {
             <div className="space-y-3 text-sm">
               <a href="tel:+38630555001" className="flex items-center gap-2.5 hover:text-orange-400 transition-colors">
                 <Phone className="w-4 h-4 text-orange-500" />
-                +386 30 555 001
+                030 555 001
               </a>
               <a href="mailto:info@starcontainers.si" className="flex items-center gap-2.5 hover:text-orange-400 transition-colors">
                 <Mail className="w-4 h-4 text-orange-500" />

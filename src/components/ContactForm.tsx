@@ -99,7 +99,7 @@ export default function ContactForm() {
                 aria-describedby="phone-desc"
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                placeholder="+386 30 555 001"
+                placeholder="030 555 001"
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-sm transition-all"
               />
               <span id="phone-desc" className="sr-only">Vpišite svojo telefonsko številko</span>
@@ -164,7 +164,7 @@ export default function ContactForm() {
           {submitStatus === 'error' && (
             <div ref={errorRef} role="alert" aria-live="assertive" tabIndex={-1} className="text-sm text-red-500 text-center bg-red-50 dark:bg-red-950/20 p-3 rounded-lg border border-red-200 dark:border-red-900/30 animate-fade-in outline-none">
               <p className="mb-2">Napaka pri pošiljanju povpraševanja.</p>
-              <p className="text-xs">Prosimo pokličite nas na <a href="tel:+38630555001" className="font-semibold hover:underline">+386 30 555 001</a> ali napišite na <a href="mailto:info@starcontainers.si" className="font-semibold hover:underline">info@starcontainers.si</a></p>
+              <p className="text-xs">Prosimo pokličite nas na <a href="tel:+38630555001" className="font-semibold hover:underline">030 555 001</a> ali napišite na <a href="mailto:info@starcontainers.si" className="font-semibold hover:underline">info@starcontainers.si</a></p>
             </div>
           )}
           <button
