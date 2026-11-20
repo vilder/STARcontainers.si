@@ -496,7 +496,7 @@ Dostava kontejnerja je enostavna – pokličete nas, dogovorimo termin, kamion p
 
 export const containerTypes = [
   { name: '10ft Standard', slug: '10ft-standard', price: '1.790', capacity: '14 m³', dims: '2.99m × 2.44m × 2.59m' },
-  { name: '20ft Standard', slug: '20ft-standard', price: '1.990', capacity: '33 m³', dims: '5.90m × 2.35m × 2.39m' },
+  { name: '20ft Standard', slug: '20ft-standard', price: '2.300', capacity: '33 m³', dims: '5.90m × 2.35m × 2.39m' },
   { name: '40ft Standard', slug: '40ft-standard', price: '2.700', capacity: '67 m³', dims: '12.03m × 2.35m × 2.39m' },
   { name: '20ft High Cube', slug: '20ft-high-cube', price: '2.490', capacity: '37 m³', dims: '5.90m × 2.35m × 2.70m' },
   { name: '40ft High Cube', slug: '40ft-high-cube', price: '2.790', capacity: '76 m³', dims: '12.03m × 2.35m × 2.70m' },
